@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-08 19:22:32
- * @LastEditTime: 2021-08-08 20:11:26
+ * @LastEditTime: 2021-08-09 10:43:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gitbook_books\SUMMARY.md
@@ -9,9 +9,7 @@
 
 # 介绍
 
-* **电子书仓库介绍**
-  * [电子书仓库介绍](README.md)
-  * [电子书介绍](介绍/电子书介绍.md)
+* [电子书介绍](介绍/电子书介绍.md)
 <!-- * [电子书介绍]() -->
 
 * **0.基本定义（必看）**
