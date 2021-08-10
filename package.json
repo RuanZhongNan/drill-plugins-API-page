@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "gitbook-plugin-auto-scroll-table": "^0.0.5",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-github": "^3.0.0",
+    "gitbook-plugin-page-treeview": "^3.0.6",
+    "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-splitter": "^0.0.8"
+  }
+}

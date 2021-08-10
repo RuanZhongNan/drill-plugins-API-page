@@ -1,0 +1,30 @@
+{
+
+    "title": "drill-plugins-API-page",
+
+    "description": "drill_up系列插件的API说明书，RPGMV常识讲解，插件demo说明与插件编写教程。",
+
+    "author": "阮中楠",
+
+    "language": "zh-hans",
+
+    "plugins": [
+        "chapter-fold",
+        "back-to-top-button",
+        "copy-code-button",
+        "splitter",
+        "page-treeview",
+        "pageview-count",
+        "auto-scroll-table",
+        "github"
+    ],
+
+    "pluginsConfig": {
+
+        "github": {
+            "url": "https://www.csdn.net/"
+        }
+
+    }
+
+}
