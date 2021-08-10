@@ -15,16 +15,10 @@
         "splitter",
         "page-treeview",
         "pageview-count",
-        "auto-scroll-table",
-        "github"
-    ],
+        "auto-scroll-table"
 
-    "pluginsConfig": {
+    ]
 
-        "github": {
-            "url": "https://www.csdn.net/"
-        }
 
-    }
 
 }
