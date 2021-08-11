@@ -1,16 +1,15 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-08 19:22:32
- * @LastEditTime: 2021-08-10 09:38:38
+ * @LastEditTime: 2021-08-11 14:14:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gitbook_books\SUMMARY.md
 -->
 
-# 介绍
+# 目录
 
-* [电子书介绍](介绍/电子书介绍.md)
-<!-- * [电子书介绍]() -->
+* [本网站介绍](介绍/网站介绍.md)
 
 * [**0.基本定义（必看）**](0.基本定义（必看）/0.基本定义（必看）.md)
   * [动画帧](0.基本定义（必看）/动画帧.md)
