@@ -1,0 +1,5323 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>注释参数集合 · drill-plugins-API-page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="阮中楠">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="给脚本开发者的建议.html" />
+    
+    
+    <link rel="prev" href="基本函数查询表.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../_book/0.基本定义（必看）/0.基本定义（必看）.md">
+            
+                <span>
+            
+                    
+                    0.基本定义（必看）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../_book/0.基本定义（必看）/作用域.md">
+            
+                <span>
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../_book/0.基本定义（必看）/兼容性.md">
+            
+                <span>
+            
+                    
+                    兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../_book/0.基本定义（必看）/动画帧.md">
+            
+                <span>
+            
+                    
+                    动画帧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../_book/0.基本定义（必看）/插件出错时解决方案.md">
+            
+                <span>
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../_book/0.基本定义（必看）/显示与透明度.md">
+            
+                <span>
+            
+                    
+                    显示与透明度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../_book/0.基本定义（必看）/混合模式.md">
+            
+                <span>
+            
+                    
+                    混合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../../_book/0.基本定义（必看）/游戏运行原理.md">
+            
+                <span>
+            
+                    
+                    游戏运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../../_book/0.基本定义（必看）/界面.md">
+            
+                <span>
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../../_book/0.基本定义（必看）/贴图.md">
+            
+                <span>
+            
+                    
+                    贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../_book/0.性能测试报告/0.性能测试报告.md">
+            
+                <span>
+            
+                    
+                    0.性能测试报告
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../_book/0.性能测试报告/关于插件性能.md">
+            
+                <span>
+            
+                    
+                    关于插件性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    1.系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../_book/1.系统/关于GIF动画序列核心.md">
+            
+                <span>
+            
+                    
+                    关于GIF动画序列核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../_book/1.系统/关于全局存储.md">
+            
+                <span>
+            
+                    
+                    关于全局存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../_book/1.系统/关于变量数组核心.md">
+            
+                <span>
+            
+                    
+                    关于变量数组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../_book/1.系统/关于弹道.md">
+            
+                <span>
+            
+                    
+                    关于弹道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../_book/1.系统/关于按钮组核心.md">
+            
+                <span>
+            
+                    
+                    关于按钮组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../../_book/1.系统/关于输入设备核心.md">
+            
+                <span>
+            
+                    
+                    关于输入设备核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../../_book/1.系统/方块粉碎大家族.md">
+            
+                <span>
+            
+                    
+                    方块粉碎大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../../_book/1.系统/滤镜效果大家族.md">
+            
+                <span>
+            
+                    
+                    滤镜效果大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    10.互动
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../_book/10.互动/rmmv按键控制说明.md">
+            
+                <span>
+            
+                    
+                    rmmv按键控制说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../_book/10.互动/关于举起花盆能力.md">
+            
+                <span>
+            
+                    
+                    关于举起花盆能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../_book/10.互动/关于侧边阶梯.md">
+            
+                <span>
+            
+                    
+                    关于侧边阶梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../_book/10.互动/关于光滑图块.md">
+            
+                <span>
+            
+                    
+                    关于光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../_book/10.互动/关于原地转向能力.md">
+            
+                <span>
+            
+                    
+                    关于原地转向能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../_book/10.互动/关于炸弹人游戏.md">
+            
+                <span>
+            
+                    
+                    关于炸弹人游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../_book/10.互动/关于物体滑行.md">
+            
+                <span>
+            
+                    
+                    关于物体滑行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../_book/10.互动/关于跳跃能力.md">
+            
+                <span>
+            
+                    
+                    关于跳跃能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../_book/10.互动/关于鼠标辅助操作面板.md">
+            
+                <span>
+            
+                    
+                    关于鼠标辅助操作面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    11.地图UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../_book/11.地图UI/关于地图按钮集.md">
+            
+                <span>
+            
+                    
+                    关于地图按钮集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../_book/11.地图UI/关于时间系统.md">
+            
+                <span>
+            
+                    
+                    关于时间系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../_book/11.地图UI/关于玩家信息固定框（配置表）.md">
+            
+                <span>
+            
+                    
+                    关于玩家信息固定框（配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" >
+            
+                <span>
+            
+                    
+                    12.动画
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../_book/12.动画/关于魔法效果与并行动画.md">
+            
+                <span>
+            
+                    
+                    关于魔法效果与并行动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" >
+            
+                <span>
+            
+                    
+                    13.UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../../_book/13.UI/关于参数数字.md">
+            
+                <span>
+            
+                    
+                    关于参数数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../../_book/13.UI/关于参数条.md">
+            
+                <span>
+            
+                    
+                    关于参数条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../../_book/13.UI/关于文本颜色.md">
+            
+                <span>
+            
+                    
+                    关于文本颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../../_book/13.UI/关于缓冲时间条与数字.md">
+            
+                <span>
+            
+                    
+                    关于缓冲时间条与数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../../_book/13.UI/关于高级BOSS生命固定框.md">
+            
+                <span>
+            
+                    
+                    关于高级BOSS生命固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../../_book/13.UI/关于高级变量固定框.md">
+            
+                <span>
+            
+                    
+                    关于高级变量固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    14.鼠标
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../_book/14.鼠标/关于鼠标悬浮窗口.md">
+            
+                <span>
+            
+                    
+                    关于鼠标悬浮窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../../_book/14.鼠标/关于鼠标拖拽图片.md">
+            
+                <span>
+            
+                    
+                    关于鼠标拖拽图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../../_book/14.鼠标/解谜设计-华容道.md">
+            
+                <span>
+            
+                    
+                    解谜设计-华容道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../../_book/14.鼠标/解谜设计-消除砖块.md">
+            
+                <span>
+            
+                    
+                    解谜设计-消除砖块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../../_book/14.鼠标/解谜设计-逻辑图形.md">
+            
+                <span>
+            
+                    
+                    解谜设计-逻辑图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    15.对话框
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../../_book/15.对话框/关于窗口字符.md">
+            
+                <span>
+            
+                    
+                    关于窗口字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    17.主菜单
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../../_book/17.主菜单/关于指针与边框.md">
+            
+                <span>
+            
+                    
+                    关于指针与边框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../../_book/17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.md">
+            
+                <span>
+            
+                    
+                    多层组合背景,粒子,魔法圈,gif,视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="../../_book/17.主菜单/窗口与布局.md">
+            
+                <span>
+            
+                    
+                    窗口与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="../../_book/17.主菜单/菜单关键字.md">
+            
+                <span>
+            
+                    
+                    菜单关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    18.面板
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../../_book/18.面板/关于世界地图.md">
+            
+                <span>
+            
+                    
+                    关于世界地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../../_book/18.面板/关于全自定义主菜单界面（含配置表）.md">
+            
+                <span>
+            
+                    
+                    关于全自定义主菜单界面（含配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../../_book/18.面板/关于全自定义信息面板.md">
+            
+                <span>
+            
+                    
+                    关于全自定义信息面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="../../_book/18.面板/关于全自定义商店界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="../../_book/18.面板/关于全自定义存档界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义存档界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="../../_book/18.面板/关于全自定义物品和技能界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义物品和技能界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="../../_book/18.面板/关于全自定义状态界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义状态界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="../../_book/18.面板/关于全自定义画廊.md">
+            
+                <span>
+            
+                    
+                    关于全自定义画廊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.9" data-path="../../_book/18.面板/关于全自定义装备界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义装备界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.10" data-path="../../_book/18.面板/关于滚轴式长画布.md">
+            
+                <span>
+            
+                    
+                    关于滚轴式长画布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.11" data-path="../../_book/18.面板/关于限量商店界面.md">
+            
+                <span>
+            
+                    
+                    关于限量商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" >
+            
+                <span>
+            
+                    
+                    2.战斗
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../../_book/2.战斗/关于超长能力数值.md">
+            
+                <span>
+            
+                    
+                    关于超长能力数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" >
+            
+                <span>
+            
+                    
+                    20.标题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.13.1" data-path="../../_book/20.标题/关于全自定义标题界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义标题界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" >
+            
+                <span>
+            
+                    
+                    21.故事管理层与人设
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.14.1" data-path="../../_book/21.故事管理层与人设/关于小爱丽丝人设.md">
+            
+                <span>
+            
+                    
+                    关于小爱丽丝人设
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" >
+            
+                <span>
+            
+                    
+                    22.插件脚本开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1" >
+            
+                <span>
+            
+                    
+                    a.初步尝试 - 修改存档上限
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1.1" data-path="../../_book/22.插件脚本开发/a.初步尝试 - 修改存档上限/修改存档上限.md">
+            
+                <span>
+            
+                    
+                    修改存档上限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.2" >
+            
+                <span>
+            
+                    
+                    b.小试身手 - 建立插件指令
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.2.1" data-path="../../_book/22.插件脚本开发/b.小试身手 - 建立插件指令/建立插件指令.md">
+            
+                <span>
+            
+                    
+                    建立插件指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3" >
+            
+                <span>
+            
+                    
+                    c.快速提升 - 在地图界面中放一个贴图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.3.1" data-path="../../_book/22.插件脚本开发/c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.md">
+            
+                <span>
+            
+                    
+                    在地图界面中放一个贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.4" >
+            
+                <span>
+            
+                    
+                    d.进阶控制 - 在任意界面中放一个GIF
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.4.1" data-path="../../_book/22.插件脚本开发/d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.md">
+            
+                <span>
+            
+                    
+                    在任意界面中放一个GIF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5" >
+            
+                <span>
+            
+                    
+                    工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.5.1" data-path="../../_book/22.插件脚本开发/工具箱/基本函数查询表.md">
+            
+                <span>
+            
+                    
+                    基本函数查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5.2" data-path="../../_book/22.插件脚本开发/工具箱/注释参数集合.md">
+            
+                <span>
+            
+                    
+                    注释参数集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5.3" data-path="../../_book/22.插件脚本开发/工具箱/给脚本开发者的建议.md">
+            
+                <span>
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" >
+            
+                <span>
+            
+                    
+                    23.问题解答集合（FAQ）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.16.1" data-path="../../_book/23.问题解答集合（FAQ）/Rmmv中的常见问题.md">
+            
+                <span>
+            
+                    
+                    Rmmv中的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.2" data-path="../../_book/23.问题解答集合（FAQ）/Rmmv中的罕见问题.md">
+            
+                <span>
+            
+                    
+                    Rmmv中的罕见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.3" data-path="../../_book/23.问题解答集合（FAQ）/插件出错时解决方案.md">
+            
+                <span>
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" >
+            
+                <span>
+            
+                    
+                    4.技能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.17.1" data-path="../../_book/4.技能/关于技能逻辑关系.md">
+            
+                <span>
+            
+                    
+                    关于技能逻辑关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.2" data-path="../../_book/4.技能/攻击者与被攻击者.md">
+            
+                <span>
+            
+                    
+                    攻击者与被攻击者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" >
+            
+                <span>
+            
+                    
+                    5.战斗UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="../../_book/5.战斗UI/关于战斗简单生命框.md">
+            
+                <span>
+            
+                    
+                    关于战斗简单生命框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.2" data-path="../../_book/5.战斗UI/关于战斗角色窗口.md">
+            
+                <span>
+            
+                    
+                    关于战斗角色窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.3" data-path="../../_book/5.战斗UI/关于高级角色肖像.md">
+            
+                <span>
+            
+                    
+                    关于高级角色肖像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" >
+            
+                <span>
+            
+                    
+                    6.地图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.19.1" data-path="../../_book/6.地图/关于公共事件与并行.md">
+            
+                <span>
+            
+                    
+                    关于公共事件与并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.2" data-path="../../_book/6.地图/关于地图活动镜头.md">
+            
+                <span>
+            
+                    
+                    关于地图活动镜头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.3" data-path="../../_book/6.地图/关于自定义照明效果.md">
+            
+                <span>
+            
+                    
+                    关于自定义照明效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" >
+            
+                <span>
+            
+                    
+                    7.行走图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.20.1" data-path="../../_book/7.行走图/关于动作效果.md">
+            
+                <span>
+            
+                    
+                    关于动作效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.2" data-path="../../_book/7.行走图/关于行走图GIF动画序列.md">
+            
+                <span>
+            
+                    
+                    关于行走图GIF动画序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.3" data-path="../../_book/7.行走图/关于行走图与图块.md">
+            
+                <span>
+            
+                    
+                    关于行走图与图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.4" data-path="../../_book/7.行走图/关于镜像与镜面.md">
+            
+                <span>
+            
+                    
+                    关于镜像与镜面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" >
+            
+                <span>
+            
+                    
+                    8.物体
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.21.1" data-path="../../_book/8.物体/开关大家族.md">
+            
+                <span>
+            
+                    
+                    开关大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.2" data-path="../../_book/8.物体/开关解谜与设计.md">
+            
+                <span>
+            
+                    
+                    开关解谜与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.3" data-path="../../_book/8.物体/独立开关与事件页.md">
+            
+                <span>
+            
+                    
+                    独立开关与事件页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.4" data-path="../../_book/8.物体/解谜设计-光滑图块.md">
+            
+                <span>
+            
+                    
+                    解谜设计-光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.5" data-path="../../_book/8.物体/解谜设计-箱子.md">
+            
+                <span>
+            
+                    
+                    解谜设计-箱子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.6" data-path="../../_book/8.物体/解谜设计-脉冲开关.md">
+            
+                <span>
+            
+                    
+                    解谜设计-脉冲开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.7" data-path="../../_book/8.物体/解谜设计-迷宫.md">
+            
+                <span>
+            
+                    
+                    解谜设计-迷宫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.8" data-path="../../_book/8.物体/解谜设计-顺序记忆.md">
+            
+                <span>
+            
+                    
+                    解谜设计-顺序记忆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" >
+            
+                <span>
+            
+                    
+                    9.物体触发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.22.1" data-path="../../_book/9.物体触发/关于事件标签核心.md">
+            
+                <span>
+            
+                    
+                    关于事件标签核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22.2" data-path="../../_book/9.物体触发/关于物体触发-固定区域.md">
+            
+                <span>
+            
+                    
+                    关于物体触发-固定区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22.3" data-path="../../_book/9.物体触发/关于物体触发-激光区域.md">
+            
+                <span>
+            
+                    
+                    关于物体触发-激光区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" >
+            
+                <span>
+            
+                    
+                    Chapter 1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.23.1" data-path="../../_book/chapter-1/section-1.md">
+            
+                <span>
+            
+                    
+                    Section 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23.2" data-path="../../_book/chapter-1/section-2.md">
+            
+                <span>
+            
+                    
+                    Section 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" >
+            
+                <span>
+            
+                    
+                    介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.24.1" data-path="../../_book/介绍/网站介绍.md">
+            
+                <span>
+            
+                    
+                    网站介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.25.1" data-path="../../_book/其它/压缩资源方法.md">
+            
+                <span>
+            
+                    
+                    压缩资源方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25.2" data-path="../../_book/其它/给脚本开发者的建议.md">
+            
+                <span>
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    0.基本定义（必看）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../0.基本定义（必看）/作用域.html">
+            
+                <a href="../../0.基本定义（必看）/作用域.html">
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../0.基本定义（必看）/兼容性.html">
+            
+                <a href="../../0.基本定义（必看）/兼容性.html">
+            
+                    
+                    兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../0.基本定义（必看）/动画帧.html">
+            
+                <a href="../../0.基本定义（必看）/动画帧.html">
+            
+                    
+                    动画帧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../0.基本定义（必看）/插件出错时解决方案.html">
+            
+                <a href="../../0.基本定义（必看）/插件出错时解决方案.html">
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../0.基本定义（必看）/显示与透明度.html">
+            
+                <a href="../../0.基本定义（必看）/显示与透明度.html">
+            
+                    
+                    显示与透明度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../0.基本定义（必看）/混合模式.html">
+            
+                <a href="../../0.基本定义（必看）/混合模式.html">
+            
+                    
+                    混合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../0.基本定义（必看）/游戏运行原理.html">
+            
+                <a href="../../0.基本定义（必看）/游戏运行原理.html">
+            
+                    
+                    游戏运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../0.基本定义（必看）/界面.html">
+            
+                <a href="../../0.基本定义（必看）/界面.html">
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../0.基本定义（必看）/贴图.html">
+            
+                <a href="../../0.基本定义（必看）/贴图.html">
+            
+                    
+                    贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../0.性能测试报告/0.性能测试报告.html">
+            
+                <a href="../../0.性能测试报告/0.性能测试报告.html">
+            
+                    
+                    0.性能测试报告
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../0.性能测试报告/关于插件性能.html">
+            
+                <a href="../../0.性能测试报告/关于插件性能.html">
+            
+                    
+                    关于插件性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../1.系统/关于GIF动画序列核心.html">
+            
+                <a href="../../1.系统/关于GIF动画序列核心.html">
+            
+                    
+                    关于GIF动画序列核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../1.系统/关于全局存储.html">
+            
+                <a href="../../1.系统/关于全局存储.html">
+            
+                    
+                    关于全局存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../1.系统/关于变量数组核心.html">
+            
+                <a href="../../1.系统/关于变量数组核心.html">
+            
+                    
+                    关于变量数组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../1.系统/关于弹道.html">
+            
+                <a href="../../1.系统/关于弹道.html">
+            
+                    
+                    关于弹道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../1.系统/关于按钮组核心.html">
+            
+                <a href="../../1.系统/关于按钮组核心.html">
+            
+                    
+                    关于按钮组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../1.系统/关于输入设备核心.html">
+            
+                <a href="../../1.系统/关于输入设备核心.html">
+            
+                    
+                    关于输入设备核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../1.系统/方块粉碎大家族.html">
+            
+                <a href="../../1.系统/方块粉碎大家族.html">
+            
+                    
+                    方块粉碎大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../1.系统/滤镜效果大家族.html">
+            
+                <a href="../../1.系统/滤镜效果大家族.html">
+            
+                    
+                    滤镜效果大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../10.互动/rmmv按键控制说明.html">
+            
+                <a href="../../10.互动/rmmv按键控制说明.html">
+            
+                    
+                    rmmv按键控制说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../10.互动/关于举起花盆能力.html">
+            
+                <a href="../../10.互动/关于举起花盆能力.html">
+            
+                    
+                    关于举起花盆能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../10.互动/关于侧边阶梯.html">
+            
+                <a href="../../10.互动/关于侧边阶梯.html">
+            
+                    
+                    关于侧边阶梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../10.互动/关于光滑图块.html">
+            
+                <a href="../../10.互动/关于光滑图块.html">
+            
+                    
+                    关于光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../10.互动/关于原地转向能力.html">
+            
+                <a href="../../10.互动/关于原地转向能力.html">
+            
+                    
+                    关于原地转向能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../10.互动/关于炸弹人游戏.html">
+            
+                <a href="../../10.互动/关于炸弹人游戏.html">
+            
+                    
+                    关于炸弹人游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../10.互动/关于物体滑行.html">
+            
+                <a href="../../10.互动/关于物体滑行.html">
+            
+                    
+                    关于物体滑行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../10.互动/关于跳跃能力.html">
+            
+                <a href="../../10.互动/关于跳跃能力.html">
+            
+                    
+                    关于跳跃能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../10.互动/关于鼠标辅助操作面板.html">
+            
+                <a href="../../10.互动/关于鼠标辅助操作面板.html">
+            
+                    
+                    关于鼠标辅助操作面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../11.地图UI/关于地图按钮集.html">
+            
+                <a href="../../11.地图UI/关于地图按钮集.html">
+            
+                    
+                    关于地图按钮集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../11.地图UI/关于时间系统.html">
+            
+                <a href="../../11.地图UI/关于时间系统.html">
+            
+                    
+                    关于时间系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../11.地图UI/关于玩家信息固定框（配置表）.html">
+            
+                <a href="../../11.地图UI/关于玩家信息固定框（配置表）.html">
+            
+                    
+                    关于玩家信息固定框（配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../12.动画/关于魔法效果与并行动画.html">
+            
+                <a href="../../12.动画/关于魔法效果与并行动画.html">
+            
+                    
+                    关于魔法效果与并行动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../13.UI/关于参数数字.html">
+            
+                <a href="../../13.UI/关于参数数字.html">
+            
+                    
+                    关于参数数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../13.UI/关于参数条.html">
+            
+                <a href="../../13.UI/关于参数条.html">
+            
+                    
+                    关于参数条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../13.UI/关于文本颜色.html">
+            
+                <a href="../../13.UI/关于文本颜色.html">
+            
+                    
+                    关于文本颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../13.UI/关于缓冲时间条与数字.html">
+            
+                <a href="../../13.UI/关于缓冲时间条与数字.html">
+            
+                    
+                    关于缓冲时间条与数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../13.UI/关于高级BOSS生命固定框.html">
+            
+                <a href="../../13.UI/关于高级BOSS生命固定框.html">
+            
+                    
+                    关于高级BOSS生命固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../13.UI/关于高级变量固定框.html">
+            
+                <a href="../../13.UI/关于高级变量固定框.html">
+            
+                    
+                    关于高级变量固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../14.鼠标/关于鼠标悬浮窗口.html">
+            
+                <a href="../../14.鼠标/关于鼠标悬浮窗口.html">
+            
+                    
+                    关于鼠标悬浮窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../14.鼠标/关于鼠标拖拽图片.html">
+            
+                <a href="../../14.鼠标/关于鼠标拖拽图片.html">
+            
+                    
+                    关于鼠标拖拽图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../14.鼠标/解谜设计-华容道.html">
+            
+                <a href="../../14.鼠标/解谜设计-华容道.html">
+            
+                    
+                    解谜设计-华容道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../14.鼠标/解谜设计-消除砖块.html">
+            
+                <a href="../../14.鼠标/解谜设计-消除砖块.html">
+            
+                    
+                    解谜设计-消除砖块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../../14.鼠标/解谜设计-逻辑图形.html">
+            
+                <a href="../../14.鼠标/解谜设计-逻辑图形.html">
+            
+                    
+                    解谜设计-逻辑图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../../15.对话框/关于窗口字符.html">
+            
+                <a href="../../15.对话框/关于窗口字符.html">
+            
+                    
+                    关于窗口字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    17.主菜单
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../17.主菜单/关于指针与边框.html">
+            
+                <a href="../../17.主菜单/关于指针与边框.html">
+            
+                    
+                    关于指针与边框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.html">
+            
+                <a href="../../17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.html">
+            
+                    
+                    多层组合背景,粒子,魔法圈,gif,视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../17.主菜单/窗口与布局.html">
+            
+                <a href="../../17.主菜单/窗口与布局.html">
+            
+                    
+                    窗口与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../17.主菜单/菜单关键字.html">
+            
+                <a href="../../17.主菜单/菜单关键字.html">
+            
+                    
+                    菜单关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    18.面板
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../18.面板/关于世界地图.html">
+            
+                <a href="../../18.面板/关于世界地图.html">
+            
+                    
+                    关于世界地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../18.面板/关于全自定义主菜单界面（含配置表）.html">
+            
+                <a href="../../18.面板/关于全自定义主菜单界面（含配置表）.html">
+            
+                    
+                    关于全自定义主菜单界面（含配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../18.面板/关于全自定义信息面板.html">
+            
+                <a href="../../18.面板/关于全自定义信息面板.html">
+            
+                    
+                    关于全自定义信息面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../18.面板/关于全自定义商店界面.html">
+            
+                <a href="../../18.面板/关于全自定义商店界面.html">
+            
+                    
+                    关于全自定义商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../18.面板/关于全自定义存档界面.html">
+            
+                <a href="../../18.面板/关于全自定义存档界面.html">
+            
+                    
+                    关于全自定义存档界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../18.面板/关于全自定义物品和技能界面.html">
+            
+                <a href="../../18.面板/关于全自定义物品和技能界面.html">
+            
+                    
+                    关于全自定义物品和技能界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../18.面板/关于全自定义状态界面.html">
+            
+                <a href="../../18.面板/关于全自定义状态界面.html">
+            
+                    
+                    关于全自定义状态界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../../18.面板/关于全自定义画廊.html">
+            
+                <a href="../../18.面板/关于全自定义画廊.html">
+            
+                    
+                    关于全自定义画廊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../../18.面板/关于全自定义装备界面.html">
+            
+                <a href="../../18.面板/关于全自定义装备界面.html">
+            
+                    
+                    关于全自定义装备界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../../18.面板/关于滚轴式长画布.html">
+            
+                <a href="../../18.面板/关于滚轴式长画布.html">
+            
+                    
+                    关于滚轴式长画布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../../18.面板/关于限量商店界面.html">
+            
+                <a href="../../18.面板/关于限量商店界面.html">
+            
+                    
+                    关于限量商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    2.战斗
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../2.战斗/关于超长能力数值.html">
+            
+                <a href="../../2.战斗/关于超长能力数值.html">
+            
+                    
+                    关于超长能力数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    20.标题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../20.标题/关于全自定义标题界面.html">
+            
+                <a href="../../20.标题/关于全自定义标题界面.html">
+            
+                    
+                    关于全自定义标题界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    21.故事管理层与人设
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../21.故事管理层与人设/关于小爱丽丝人设.html">
+            
+                <a href="../../21.故事管理层与人设/关于小爱丽丝人设.html">
+            
+                    
+                    关于小爱丽丝人设
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    22.插件脚本开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    a.初步尝试 - 修改存档上限
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../a.初步尝试 - 修改存档上限/修改存档上限.html">
+            
+                <a href="../a.初步尝试 - 修改存档上限/修改存档上限.html">
+            
+                    
+                    修改存档上限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    b.小试身手 - 建立插件指令
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="../b.小试身手 - 建立插件指令/建立插件指令.html">
+            
+                <a href="../b.小试身手 - 建立插件指令/建立插件指令.html">
+            
+                    
+                    建立插件指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" >
+            
+                <span>
+            
+                    
+                    c.快速提升 - 在地图界面中放一个贴图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.3.1" data-path="../c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.html">
+            
+                <a href="../c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.html">
+            
+                    
+                    在地图界面中放一个贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" >
+            
+                <span>
+            
+                    
+                    d.进阶控制 - 在任意界面中放一个GIF
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.4.1" data-path="../d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.html">
+            
+                <a href="../d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.html">
+            
+                    
+                    在任意界面中放一个GIF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" >
+            
+                <span>
+            
+                    
+                    工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.5.1" data-path="基本函数查询表.html">
+            
+                <a href="基本函数查询表.html">
+            
+                    
+                    基本函数查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16.5.2" data-path="注释参数集合.html">
+            
+                <a href="注释参数集合.html">
+            
+                    
+                    注释参数集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5.3" data-path="给脚本开发者的建议.html">
+            
+                <a href="给脚本开发者的建议.html">
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    23.问题解答集合（FAQ）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../23.问题解答集合（FAQ）/Rmmv中的常见问题.html">
+            
+                <a href="../../23.问题解答集合（FAQ）/Rmmv中的常见问题.html">
+            
+                    
+                    Rmmv中的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../23.问题解答集合（FAQ）/Rmmv中的罕见问题.html">
+            
+                <a href="../../23.问题解答集合（FAQ）/Rmmv中的罕见问题.html">
+            
+                    
+                    Rmmv中的罕见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../../23.问题解答集合（FAQ）/插件出错时解决方案.html">
+            
+                <a href="../../23.问题解答集合（FAQ）/插件出错时解决方案.html">
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    4.技能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../4.技能/关于技能逻辑关系.html">
+            
+                <a href="../../4.技能/关于技能逻辑关系.html">
+            
+                    
+                    关于技能逻辑关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../4.技能/攻击者与被攻击者.html">
+            
+                <a href="../../4.技能/攻击者与被攻击者.html">
+            
+                    
+                    攻击者与被攻击者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    5.战斗UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../5.战斗UI/关于战斗简单生命框.html">
+            
+                <a href="../../5.战斗UI/关于战斗简单生命框.html">
+            
+                    
+                    关于战斗简单生命框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../../5.战斗UI/关于战斗角色窗口.html">
+            
+                <a href="../../5.战斗UI/关于战斗角色窗口.html">
+            
+                    
+                    关于战斗角色窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../../5.战斗UI/关于高级角色肖像.html">
+            
+                <a href="../../5.战斗UI/关于高级角色肖像.html">
+            
+                    
+                    关于高级角色肖像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    6.地图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../6.地图/关于公共事件与并行.html">
+            
+                <a href="../../6.地图/关于公共事件与并行.html">
+            
+                    
+                    关于公共事件与并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../6.地图/关于地图活动镜头.html">
+            
+                <a href="../../6.地图/关于地图活动镜头.html">
+            
+                    
+                    关于地图活动镜头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../../6.地图/关于自定义照明效果.html">
+            
+                <a href="../../6.地图/关于自定义照明效果.html">
+            
+                    
+                    关于自定义照明效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    7.行走图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../../7.行走图/关于动作效果.html">
+            
+                <a href="../../7.行走图/关于动作效果.html">
+            
+                    
+                    关于动作效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../../7.行走图/关于行走图GIF动画序列.html">
+            
+                <a href="../../7.行走图/关于行走图GIF动画序列.html">
+            
+                    
+                    关于行走图GIF动画序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../../7.行走图/关于行走图与图块.html">
+            
+                <a href="../../7.行走图/关于行走图与图块.html">
+            
+                    
+                    关于行走图与图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../../7.行走图/关于镜像与镜面.html">
+            
+                <a href="../../7.行走图/关于镜像与镜面.html">
+            
+                    
+                    关于镜像与镜面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    8.物体
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../../8.物体/开关大家族.html">
+            
+                <a href="../../8.物体/开关大家族.html">
+            
+                    
+                    开关大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../../8.物体/开关解谜与设计.html">
+            
+                <a href="../../8.物体/开关解谜与设计.html">
+            
+                    
+                    开关解谜与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../../8.物体/独立开关与事件页.html">
+            
+                <a href="../../8.物体/独立开关与事件页.html">
+            
+                    
+                    独立开关与事件页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../../8.物体/解谜设计-光滑图块.html">
+            
+                <a href="../../8.物体/解谜设计-光滑图块.html">
+            
+                    
+                    解谜设计-光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.5" data-path="../../8.物体/解谜设计-箱子.html">
+            
+                <a href="../../8.物体/解谜设计-箱子.html">
+            
+                    
+                    解谜设计-箱子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.6" data-path="../../8.物体/解谜设计-脉冲开关.html">
+            
+                <a href="../../8.物体/解谜设计-脉冲开关.html">
+            
+                    
+                    解谜设计-脉冲开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.7" data-path="../../8.物体/解谜设计-迷宫.html">
+            
+                <a href="../../8.物体/解谜设计-迷宫.html">
+            
+                    
+                    解谜设计-迷宫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.8" data-path="../../8.物体/解谜设计-顺序记忆.html">
+            
+                <a href="../../8.物体/解谜设计-顺序记忆.html">
+            
+                    
+                    解谜设计-顺序记忆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    9.物体触发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../../9.物体触发/关于事件标签核心.html">
+            
+                <a href="../../9.物体触发/关于事件标签核心.html">
+            
+                    
+                    关于事件标签核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../../9.物体触发/关于物体触发-固定区域.html">
+            
+                <a href="../../9.物体触发/关于物体触发-固定区域.html">
+            
+                    
+                    关于物体触发-固定区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../../9.物体触发/关于物体触发-激光区域.html">
+            
+                <a href="../../9.物体触发/关于物体触发-激光区域.html">
+            
+                    
+                    关于物体触发-激光区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    Chapter 1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../../chapter-1/section-1.html">
+            
+                <a href="../../chapter-1/section-1.html">
+            
+                    
+                    Section 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../../chapter-1/section-2.html">
+            
+                <a href="../../chapter-1/section-2.html">
+            
+                    
+                    Section 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    Node Modules
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../../node_modules/argparse/README.md">
+            
+                <span>
+            
+                    
+                    Argparse
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1.1" data-path="../../node_modules/argparse/HISTORY.md">
+            
+                <span>
+            
+                    
+                    HISTORY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../../node_modules/autolinker/README.md">
+            
+                <span>
+            
+                    
+                    Autolinker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../../node_modules/gitbook-plugin-back-to-top-button/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Back To Top Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../../node_modules/gitbook-plugin-chapter-fold/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Chapter Fold
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../../node_modules/gitbook-plugin-copy-code-button/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Copy Code Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.6" data-path="../../node_modules/gitbook-plugin-github/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.7" data-path="../../node_modules/gitbook-plugin-page-treeview/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Page Treeview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.8" data-path="../../node_modules/gitbook-plugin-pageview-count/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Pageview Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.9" data-path="../../node_modules/gitbook-plugin-splitter/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Splitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.10" data-path="../../node_modules/he/README.md">
+            
+                <span>
+            
+                    
+                    He
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.11" data-path="../../node_modules/marked/README.md">
+            
+                <span>
+            
+                    
+                    Marked
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.11.1" data-path="../../node_modules/marked/LICENSE.md">
+            
+                <span>
+            
+                    
+                    LICENSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.12" data-path="../../node_modules/node-html-parser/README.md">
+            
+                <span>
+            
+                    
+                    Node Html Parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13" data-path="../../node_modules/remarkable/README.md">
+            
+                <span>
+            
+                    
+                    Remarkable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1" >
+            
+                <span>
+            
+                    
+                    Benchmark
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1.1" >
+            
+                <span>
+            
+                    
+                    Fixtures
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1.1.1" data-path="../../node_modules/remarkable/benchmark/fixtures/block-bq-flat.md">
+            
+                <span>
+            
+                    
+                    Block Bq Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.2" data-path="../../node_modules/remarkable/benchmark/fixtures/block-bq-nested.md">
+            
+                <span>
+            
+                    
+                    Block Bq Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.3" data-path="../../node_modules/remarkable/benchmark/fixtures/block-code.md">
+            
+                <span>
+            
+                    
+                    Block Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.4" data-path="../../node_modules/remarkable/benchmark/fixtures/block-fences.md">
+            
+                <span>
+            
+                    
+                    Block Fences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.5" data-path="../../node_modules/remarkable/benchmark/fixtures/block-heading.md">
+            
+                <span>
+            
+                    
+                    Block Heading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.6" data-path="../../node_modules/remarkable/benchmark/fixtures/block-hr.md">
+            
+                <span>
+            
+                    
+                    Block Hr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.7" data-path="../../node_modules/remarkable/benchmark/fixtures/block-html.md">
+            
+                <span>
+            
+                    
+                    Block Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.8" data-path="../../node_modules/remarkable/benchmark/fixtures/block-lheading.md">
+            
+                <span>
+            
+                    
+                    Block Lheading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.9" data-path="../../node_modules/remarkable/benchmark/fixtures/block-list-flat.md">
+            
+                <span>
+            
+                    
+                    Block List Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.10" data-path="../../node_modules/remarkable/benchmark/fixtures/block-list-nested.md">
+            
+                <span>
+            
+                    
+                    Block List Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.11" data-path="../../node_modules/remarkable/benchmark/fixtures/block-ref-flat.md">
+            
+                <span>
+            
+                    
+                    Block Ref Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.12" data-path="../../node_modules/remarkable/benchmark/fixtures/block-ref-nested.md">
+            
+                <span>
+            
+                    
+                    Block Ref Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.13" data-path="../../node_modules/remarkable/benchmark/fixtures/block-tables.md">
+            
+                <span>
+            
+                    
+                    Block Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.14" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-autolink.md">
+            
+                <span>
+            
+                    
+                    Inline Autolink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.15" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-backticks.md">
+            
+                <span>
+            
+                    
+                    Inline Backticks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.16" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-em-flat.md">
+            
+                <span>
+            
+                    
+                    Inline Em Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.17" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-em-nested.md">
+            
+                <span>
+            
+                    
+                    Inline Em Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.18" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-em-worst.md">
+            
+                <span>
+            
+                    
+                    Inline Em Worst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.19" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-entity.md">
+            
+                <span>
+            
+                    
+                    Inline Entity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.20" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-escape.md">
+            
+                <span>
+            
+                    
+                    Inline Escape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.21" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-html.md">
+            
+                <span>
+            
+                    
+                    Inline Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.22" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-links-flat.md">
+            
+                <span>
+            
+                    
+                    Inline Links Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.23" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-links-nested.md">
+            
+                <span>
+            
+                    
+                    Inline Links Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.24" data-path="../../node_modules/remarkable/benchmark/fixtures/inline-newlines.md">
+            
+                <span>
+            
+                    
+                    Inline Newlines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.25" data-path="../../node_modules/remarkable/benchmark/fixtures/rawtabs.md">
+            
+                <span>
+            
+                    
+                    Rawtabs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.2" >
+            
+                <span>
+            
+                    
+                    Demo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.2.1" data-path="../../node_modules/remarkable/demo/example.md">
+            
+                <span>
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.3" data-path="../../node_modules/remarkable/CHANGELOG.md">
+            
+                <span>
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.4" data-path="../../node_modules/remarkable/CONTRIBUTING.md">
+            
+                <span>
+            
+                    
+                    CONTRIBUTING
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.14" data-path="../../node_modules/underscore/README.md">
+            
+                <span>
+            
+                    
+                    Underscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../../介绍/网站介绍.html">
+            
+                <a href="../../介绍/网站介绍.html">
+            
+                    
+                    网站介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.2" data-path="../../其它/压缩资源方法.html">
+            
+                <a href="../../其它/压缩资源方法.html">
+            
+                    
+                    压缩资源方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.3" data-path="../../其它/给脚本开发者的建议.html">
+            
+                <a href="../../其它/给脚本开发者的建议.html">
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../../关于使用条款与商用说明.html">
+            
+                <a href="../../关于使用条款与商用说明.html">
+            
+                    
+                    关于使用条款与商用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../../插件效果图速览v2.60.html">
+            
+                <a href="../../插件效果图速览v2.60.html">
+            
+                    
+                    插件效果图速览v2.60
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >注释参数集合</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li> 
+<ul>
+<li><div><a href="#&#x6587;&#x672C;">&#x6587;&#x672C;</a><i></i></div></li>
+<li><div><a href="#&#x6570;&#x5B57;">&#x6570;&#x5B57;</a><i></i></div></li>
+<li><div><a href="#&#x5907;&#x6CE8;">&#x5907;&#x6CE8;</a><i></i></div></li>
+<li><div><a href="#&#x5E03;&#x5C14;">&#x5E03;&#x5C14;</a><i></i></div></li>
+<li><div><a href="#&#x4E0B;&#x62C9;&#x6846;">&#x4E0B;&#x62C9;&#x6846;</a><i></i></div></li>
+<li><div><a href="#&#x6587;&#x4EF6;&#x8D44;&#x6E90;">&#x6587;&#x4EF6;&#x8D44;&#x6E90;</a><i></i></div></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x5BF9;&#x8C61;id">&#x5E38;&#x7528;&#x5BF9;&#x8C61;id</a><i></i></div></li>
+<li><div><a href="#&#x7236;&#x7C7B;&#x5206;&#x652F;">&#x7236;&#x7C7B;&#x5206;&#x652F;</a><i></i></div></li>
+<li><div><a href="#&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</a><i></i></div></li>
+<li><div><a href="#&#x7ED3;&#x6784;&#x4F53;">&#x7ED3;&#x6784;&#x4F53;</a><i></i></div></li>
+<li><div><a href="#drill&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;">Drill&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x53D8;&#x91CF;&#x83B7;&#x53D6;">&#x53D8;&#x91CF;&#x83B7;&#x53D6;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;">&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</a><i></i></div></li>
+<li><div><a href="#&#x6570;&#x5B57;&#x7C7B;&#x578B;">&#x6570;&#x5B57;&#x7C7B;&#x578B;</a><i></i></div></li>
+<li><div><a href="#&#x5E03;&#x5C14;&#x7C7B;&#x578B;">&#x5E03;&#x5C14;&#x7C7B;&#x578B;</a><i></i></div></li>
+<li><div><a href="#&#x6570;&#x7EC4;&#x7C7B;&#x578B;">&#x6570;&#x7EC4;&#x7C7B;&#x578B;</a><i></i></div></li>
+<li><div><a href="#&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;">&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h2 id="&#x6CE8;&#x91CA;&#x53C2;&#x6570;">&#x6CE8;&#x91CA;&#x53C2;&#x6570;</h2>
+<h3 id="&#x6587;&#x672C;">&#x6587;&#x672C;</h3>
+<p>&#x5728;&#x63D2;&#x4EF6;&#x6CE8;&#x91CA;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;\@param&#x6CE8;&#x89E3;&#xFF0C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5230;&#x63D2;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x81F3;&#x5C11;&#x8981;\@param&#x3001;\@desc&#x4E24;&#x4E2A;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x6CE8;&#x91CA;&#x53C2;&#x6570;&#x5728;rmmv&#x4E2D;&#x914D;&#x7F6E;&#x4E4B;&#x540E;&#x7684;&#x503C;&#xFF0C;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x65F6;&#xFF0C;&#x8981;&#x8F6C;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x8F6C;&#x7C7B;&#x578B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x770B;&#x540E;&#x9762;&#x7AE0;&#x8282; &#x53D8;&#x91CF;&#x83B7;&#x53D6; &#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;                                               |
+|                                                                       |
+| * \@desc &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x7684;&#x63A7;&#x5236;&#x53C2;&#x6570;&#x3002;                                    |
+|                                                                       |
+| * \@default 20                                                       |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5199;\@type&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;text&#x3002;&#x8FD9;&#x91CC;&#x5199;&#x4E0E;&#x4E0D;&#x5199;&#x533A;&#x522B;&#x4E0D;&#x5927;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;                                               |
+|                                                                       |
+| * \@type text                                                        |
+|                                                                       |
+| * \@desc &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x7684;&#x63A7;&#x5236;&#x53C2;&#x6570;&#x3002;                                    |
+|                                                                       |
+| * \@default 20                                                       |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x63D0;&#x53CA;&#x4E00;&#x4E0B;&#xFF0C;\@text&#x5C31;&#x662F;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6709;&#x4E86;\@text&#xFF0C;\@param&#x5C31;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x82F1;&#x6587;&#x4E86;&#x3002;</p>
+<p><strong>&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;&#x4F5C;&#x8005;&#x81EA;&#x5DF1;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x901A;&#x8FC7;\@text&#x6765;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x5B9E;&#x5C5E;&#x591A;&#x6B64;&#x4E00;&#x4E3E;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x56E0;&#x4E3A;&#x540E;&#x671F;&#x4E00;&#x6837;&#x8981;&#x901A;&#x8FC7;parameter&#x6765;&#x8F6C;&#x53C2;&#x6570;&#x683C;&#x5F0F;&#x5230;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F60;&#x4EEC;&#x4F7F;&#x7528;\@text&#x3002;</strong></p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param maxFileNum                                                 |
+|                                                                       |
+| * \@text &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x663E;&#x793A;&#x540D;                                          |
+|                                                                       |
+| * \@type text                                                        |
+|                                                                       |
+| * \@desc &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x7684;&#x63A7;&#x5236;&#x53C2;&#x6570;&#x3002;                                    |
+|                                                                       |
+| * \@default 20                                                       |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p><img src="MediaFolder/media/image1.png" alt="">{width=&quot;3.499779090113736in&quot;
+height=&quot;1.8416666666666666in&quot;}</p>
+<h3 id="&#x6570;&#x5B57;">&#x6570;&#x5B57;</h3>
+<p>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@type number&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8F93;&#x5165;&#x9501;&#x5B9A;&#x4E3A;&#x6570;&#x5B57;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x9501;&#x5B9A;&#x540E;&#xFF0C;&#x53EA;&#x80FD;&#x8F93;&#x5165;&#x6574;&#x6570;&#x6570;&#x5B57;&#xFF0C;&#x65E0;&#x6CD5;&#x8F93;&#x5165;&#x5C0F;&#x6570;&#x3002;&#xFF08;&#x5982;&#x679C;&#x8981;&#x8F93;&#x5165;&#x5C0F;&#x6570;&#x3001;&#x8D1F;&#x6570;&#xFF0C;&#x8FD8;&#x662F;&#x6539;&#x56DE;\@type
+text&#x5427;&#xFF09;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;                                               |
+|                                                                       |
+| * \@type number                                                      |
+|                                                                       |
+| * \@min 1                                                            |
+|                                                                       |
+| * \@max 100                                                          |
+|                                                                       |
+| * \@desc &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x7684;&#x63A7;&#x5236;&#x53C2;&#x6570;&#x3002;                                    |
+|                                                                       |
+| * \@default 20                                                       |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="&#x5907;&#x6CE8;">&#x5907;&#x6CE8;</h3>
+<p>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@type note&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8F93;&#x5165;&#x53D8;&#x4E3A;&#x591A;&#x884C;&#x7684;&#x6587;&#x672C;&#x57DF;&#x8F93;&#x5165;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5185;&#x5BB9;                                                       |
+|                                                                       |
+| * \@type note                                                        |
+|                                                                       |
+| * \@desc &#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;&#x7684;&#x63A7;&#x5236;&#x53C2;&#x6570;&#x3002;                                    |
+|                                                                       |
+| * \@default \&quot;&#x63CF;&#x8FF0;\&quot;                                                 |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5C06;&#x4F1A;&#x88AB;&quot;\&quot;&#x8F6C;&#x4E49;&#xFF0C;&#x5E76;&#x4E14;&#x6DFB;&#x52A0;&#x4E86;&quot;&quot;&#x53CC;&#x5F15;&#x53F7;&#x3002;</p>
+<p>&#x540E;&#x671F;&#x5982;&#x8981;&#x89E3;&#x6790;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x5C06;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| var temp = String(DrillUp.parameters[\&apos;&#x5185;&#x5BB9;\&apos;]);                    |
+|                                                                       |
+| temp = temp.substring(1,temp.length-1); //&#x53BB;&#x6389;&#x53CC;&#x5F15;&#x53F7;                  |
+|                                                                       |
+| temp = temp.replace(/\\\\/g,\&quot;\\\&quot;); //&#x8F6C;&#x4E49;&#x53CC;&#x659C;&#x6760;               |
+|                                                                       |
+| DrillUp.g_XXX_context = temp;                                         |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="&#x5E03;&#x5C14;">&#x5E03;&#x5C14;</h3>
+<p>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@type boolean&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8F93;&#x5165;&#x53D8;&#x4E3A;&#x4E24;&#x4E2A;&#x5355;&#x9009;&#xFF0C;&#x53EA;&#x80FD;&#x9009;&#x62E9;true&#x548C;false&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x503C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&quot;true&quot;&#x548C;&quot;false&quot;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5E03;&#x5C14;                                                       |
+|                                                                       |
+| * \@type boolean                                                     |
+|                                                                       |
+| * \@on &#x4F7F;&#x7528;                                                          |
+|                                                                       |
+| * \@off &#x4E0D;&#x4F7F;&#x7528;                                                       |
+|                                                                       |
+| * \@desc true - &#x4F7F;&#x7528;&#xFF0C;false - &#x4E0D;&#x4F7F;&#x7528;                                 |
+|                                                                       |
+| * \@default true                                                     |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="&#x4E0B;&#x62C9;&#x6846;">&#x4E0B;&#x62C9;&#x6846;</h3>
+<p>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@type select&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8F93;&#x5165;&#x53D8;&#x4E3A;&#x4E0B;&#x62C9;&#x6846;&#xFF0C;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x7684;&#x5982;&#x4E0B;&#xFF1A;&#xFF08;option&#x662F;&#x663E;&#x793A;&#x7684;&#x503C;&#xFF0C;value&#x662F;&#x771F;&#x5B9E;&#x586B;&#x5165;&#x7684;&#x503C;&#xFF09;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x79FB;&#x52A8;&#x7C7B;&#x578B;                                                   |
+|                                                                       |
+| * \@type select                                                      |
+|                                                                       |
+| * \@option &#x5300;&#x901F;&#x79FB;&#x52A8;                                                  |
+|                                                                       |
+| * \@value &#x5300;&#x901F;&#x79FB;&#x52A8;                                                   |
+|                                                                       |
+| * \@option &#x5F39;&#x6027;&#x79FB;&#x52A8;                                                  |
+|                                                                       |
+| * \@value &#x5F39;&#x6027;&#x79FB;&#x52A8;                                                   |
+|                                                                       |
+| * \@option &#x4E0D;&#x79FB;&#x52A8;                                                    |
+|                                                                       |
+| * \@value &#x4E0D;&#x79FB;&#x52A8;                                                     |
+|                                                                       |
+| * \@desc &#x521D;&#x59CB;&#x7684;&#x79FB;&#x52A8;&#x65B9;&#x5F0F;&#x3002;                                            |
+|                                                                       |
+| * \@default &#x5300;&#x901F;&#x79FB;&#x52A8;                                                 |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x4E5F;&#x6709;&#x4E0D;&#x5E38;&#x7528;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#xFF1A;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x4EFB;&#x52A1;&#x7C7B;&#x578B;                                                   |
+|                                                                       |
+| * \@type combo                                                       |
+|                                                                       |
+| * \@option &#x521D;&#x7EA7;&#x4EFB;&#x52A1;                                                  |
+|                                                                       |
+| * \@option &#x4E2D;&#x7EA7;&#x4EFB;&#x52A1;                                                  |
+|                                                                       |
+| * \@option &#x9AD8;&#x7EA7;&#x4EFB;&#x52A1;                                                  |
+|                                                                       |
+| * \@option &#x7279;&#x7EA7;&#x4EFB;&#x52A1;                                                  |
+|                                                                       |
+| * \@desc &#x4EFB;&#x52A1;&#x7684;&#x7C7B;&#x578B;&#x7B49;&#x7EA7;&#x3002;                                            |
+|                                                                       |
+| * \@default &#x521D;&#x7EA7;&#x4EFB;&#x52A1;                                                 |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="&#x6587;&#x4EF6;&#x8D44;&#x6E90;">&#x6587;&#x4EF6;&#x8D44;&#x6E90;</h3>
+<p>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@type file&#x6765;&#x53D8;&#x4E3A;&#x6587;&#x4EF6;&#x9009;&#x62E9;&#x6846;&#xFF0C;&#x901A;&#x5E38;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#x4F1A;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<p>&#xFF08;&#x90E8;&#x5206;&#x63D2;&#x4EF6;&#x4E2D;\@desc&#x548C;\@default&#x7684;&#x987A;&#x5E8F;&#x4F1A;&#x4E71;&#xFF0C;&#x4E0D;&#x8FC7;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x63A7;&#x5236;&#x3002;&#xFF09;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x8D44;&#x6E90;-&#x80CC;&#x666F;                                                  |
+|                                                                       |
+| * \@require 1                                                        |
+|                                                                       |
+| * \@dir img/Menu__layer/                                           |
+|                                                                       |
+| * \@type file                                                        |
+|                                                                       |
+| * \@desc &#x80CC;&#x666F;&#x7684;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x3002;                                            |
+|                                                                       |
+| * \@default &#x80CC;&#x666F;-&#x9ED8;&#x8BA4;&#x80CC;&#x666F;                                            |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p><img src="MediaFolder/media/image2.png" alt="C:\\Users\\lenovo\\AppData\\Roaming\\Tencent\\Users\\1355126171\\QQ\\WinTemp\\RichOle\\X5ZO\_\]CT\@5Y)Y\`G2%YCD\]%W.png">{width=&quot;3.308510498687664in&quot;
+height=&quot;1.69001968503937in&quot;}</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6CDB;&#x7528;&#x8DEF;&#x5F84;&#xFF08;&#x4E0D;&#x6307;&#x5B9A;\@dir&#xFF09;&#xFF1A;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x6587;&#x4EF6;-3                                                     |
+|                                                                       |
+| * \@require 1                                                        |
+|                                                                       |
+| * \@type file                                                        |
+|                                                                       |
+| * \@desc &#x5F3A;&#x5236;&#x52A0;&#x5BC6;&#x5173;&#x8054;&#x7684;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#x3002;                                    |
+|                                                                       |
+| * \@default                                                          |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p><img src="MediaFolder/media/image3.png" alt="C:\\Users\\lenovo\\AppData\\Roaming\\Tencent\\Users\\1355126171\\QQ\\WinTemp\\RichOle\\6J\]TQK6AC9)1QP4HZZ71ZI1.png">{width=&quot;3.297871828521435in&quot;
+height=&quot;1.6845844269466317in&quot;}</p>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x4E24;&#x79CD;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#x5173;&#x8054;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5728;rmmv&#x6253;&#x5305;&#x6392;&#x9664;&#x65F6;&#xFF0C;&#x4E0D;&#x88AB;&#x6E05;&#x7406;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x6CE8;&#x89E3;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5EF6;&#x4F38;&#x5230;&#x7B2C;&#x4E8C;&#x5C42;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x518D;&#x4E0B;&#x5C42;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x662F;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x7684;&#x3002;</p>
+<h3 id="&#x5E38;&#x7528;&#x5BF9;&#x8C61;id">&#x5E38;&#x7528;&#x5BF9;&#x8C61;id</h3>
+<p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x5E38;&#x7528;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x5B83;&#x53EF;&#x4F9B;&#x9009;&#x62E9;&#x7684;&#x5BF9;&#x8C61;id&#xFF1A;</p>
+<p>&#x5176;&#x4E2D;0&#x8868;&#x793A;&#x7A7A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5BF9;&#x8C61;-&#x5F00;&#x5173;id                                                |
+|                                                                       |
+| * \@type switch                                                      |
+|                                                                       |
+| * \@desc &#x5F00;&#x5173;id&#x7684;&#x8BBE;&#x7F6E;&#x3002;                                              |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5BF9;&#x8C61;-&#x53D8;&#x91CF;id                                                |
+|                                                                       |
+| * \@type variable                                                    |
+|                                                                       |
+| * \@desc &#x53D8;&#x91CF;id&#x7684;&#x8BBE;&#x7F6E;&#x3002;                                              |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5BF9;&#x8C61;-&#x516C;&#x5171;&#x4E8B;&#x4EF6;id                                            |
+|                                                                       |
+| * \@type common_event                                                |
+|                                                                       |
+| * \@desc &#x516C;&#x5171;&#x4E8B;&#x4EF6;id&#x7684;&#x8BBE;&#x7F6E;&#x3002;                                          |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x603B;&#x7ED3;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>* \@type switch &#xFF08;&#x5F00;&#x5173;&#xFF09;</p>
+<p>* \@type variable &#xFF08;&#x53D8;&#x91CF;&#xFF09;</p>
+<p>* \@type animation &#xFF08;&#x52A8;&#x753B;&#xFF09;</p>
+<p>* \@type actor &#xFF08;&#x89D2;&#x8272;&#xFF09;</p>
+<p>* \@type armor &#xFF08;&#x9632;&#x5177;&#xFF09;</p>
+<p>* \@type item &#xFF08;&#x7269;&#x54C1;&#xFF09;</p>
+<p>* \@type class &#xFF08;&#x804C;&#x4E1A;&#xFF09;</p>
+<p>* \@type skill &#xFF08;&#x6280;&#x80FD;&#xFF09;</p>
+<p>* \@type tileset &#xFF08;&#x56FE;&#x5757;&#xFF09;</p>
+<p>* \@type state &#xFF08;&#x72B6;&#x6001;&#xFF09;</p>
+<p>* \@type troop &#xFF08;&#x654C;&#x7FA4;&#xFF09;</p>
+<p>* \@type enemy &#xFF08;&#x654C;&#x4EBA;&#xFF09;</p>
+<p>* \@type weapon &#xFF08;&#x6B66;&#x5668;&#xFF09;</p>
+<p>* \@type common_event &#xFF08;&#x516C;&#x5171;&#x4E8B;&#x4EF6;&#xFF09;</p>
+<h3 id="&#x7236;&#x7C7B;&#x5206;&#x652F;">&#x7236;&#x7C7B;&#x5206;&#x652F;</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;\@parent&#x6765;&#x5212;&#x5206;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x7684;&#x6811;&#x7ED3;&#x6784;&#x3002;</p>
+<p>parent&#x540D;&#x5B57;&#x5FC5;&#x987B;&#x4E0E;param&#x7684;&#x540D;&#x5B57;&#x5BF9;&#x5E94;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param ==&#x73AF;&#x5F62;&#x6392;&#x5217;==                                               |
+|                                                                       |
+| * \@desc                                                             |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x73AF;&#x5F62;&#x534A;&#x5F84;                                                   |
+|                                                                       |
+| * \@parent ==&#x73AF;&#x5F62;&#x6392;&#x5217;==                                              |
+|                                                                       |
+| * \@type number                                                      |
+|                                                                       |
+| * \@min 0                                                            |
+|                                                                       |
+| * \@desc &#x73AF;&#x5F62;&#x6392;&#x5217;&#x65F6;&#xFF0C;&#x89D2;&#x8272;&#x6846;&#x56F4;&#x7ED5;&#x7684;&#x534A;&#x5F84;&#x3002;&#x5355;&#x4F4D;&#x50CF;&#x7D20;&#x3002;                    |
+|                                                                       |
+| * \@default 192                                                      |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x73AF;&#x5F62;&#x8D77;&#x59CB;&#x89D2;                                                 |
+|                                                                       |
+| * \@parent ==&#x73AF;&#x5F62;&#x6392;&#x5217;==                                              |
+|                                                                       |
+| * \@type number                                                      |
+|                                                                       |
+| * \@min 0                                                            |
+|                                                                       |
+| * \@max 360                                                          |
+|                                                                       |
+| * \@desc &#x73AF;&#x5F62;&#x6392;&#x5217;&#x65F6;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x6846;&#x6240;&#x5728;&#x7684;&#x89D2;&#x5EA6;&#x4F4D;&#x7F6E;&#x3002;                    |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&quot;&#x73AF;&#x5F62;&#x534A;&#x5F84;&quot;&#x548C;&quot;&#x73AF;&#x5F62;&#x8D77;&#x59CB;&#x89D2;&quot;&#x5C31;&#x51FA;&#x73B0;&#x5728;&quot;==&#x73AF;&#x5F62;&#x6392;&#x5217;==&quot;&#x53C2;&#x6570;&#x4E0B;&#x4E86;&#x3002;</p>
+<p><img src="MediaFolder/media/image4.png" alt="">{width=&quot;2.9163024934383204in&quot;
+height=&quot;0.7186603237095363in&quot;}</p>
+<h3 id="&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</h3>
+<p>&#x76F4;&#x63A5;&#x5728;\@type&#x540E;&#x9762;&#x52A0;[]&#x5373;&#x53EF;&#x3002;&#x6BD4;&#x5982; \@type text[]&#x3001;\@type
+number[]&#x3001;\@type note[]&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;\@default&#x6700;&#x5C11;&#x8981;&#x6709;&#x4E2A;[]&#xFF0C;&#x4E0D;&#x7136;&#x540E;&#x671F;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x8F6C;&#x6362;&#x65F6;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x62A5;&#x9519;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x56FA;&#x5B9A;&#x79BB;&#x6563;&#x4F4D;&#x7F6E;&#x5E8F;&#x5217;                                           |
+|                                                                       |
+| * \@parent ==&#x56FA;&#x5B9A;&#x79BB;&#x6563;&#x6392;&#x5217;==                                          |
+|                                                                       |
+| * \@type text[]                                                    |
+|                                                                       |
+| * \@desc &#x56FA;&#x5B9A;&#x79BB;&#x6563;&#x6392;&#x5217;&#x65F6;&#xFF0C;&#x586B;&#x5165; x,y                                    |
+| &#x7684;&#x5750;&#x6807;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x4F8B;&#x5982;&#xFF1A;200,200&#xFF0C;&#x4E0D;&#x586B;&#x5219;&#x9ED8;&#x8BA4;0,0&#x3002;                          |
+|                                                                       |
+| * \@default []                                                     |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x4E0A;&#x9762;&#x4E3A;&#x6309;&#x94AE;&#x7EC4;&#x4E2D;&#x7684;&#x53C2;&#x6570; &quot;&#x56FA;&#x5B9A;&#x79BB;&#x6563;&#x4F4D;&#x7F6E;&#x5E8F;&#x5217;&quot; &#x7684;&#x529F;&#x80FD;&#xFF0C;&#x70B9;&#x5F00;&#x540E;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>![C:\Users\lenovo\AppData\Roaming\Tencent\Users\1355126171\QQ\WinTemp\RichOle\AI9)97USSCP0E7YXQ[}H}20.png](./MediaFolder/media/image5.png){width=&quot;5.191666666666666in&quot;
+height=&quot;2.936111111111111in&quot;}</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6570;&#x7EC4;&#x901A;&#x8FC7;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x540E;&#xFF0C;&#x662F;&#x4E00;&#x957F;&#x4E32;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x9700;&#x8981;&#x8FDB;&#x884C;JSON.parse()&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x89C1;&#x540E;&#x9762;&#x7AE0;&#x8282;&#x3002;</p>
+<h3 id="&#x7ED3;&#x6784;&#x4F53;">&#x7ED3;&#x6784;&#x4F53;</h3>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x662F;&#x5C06;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x53D8;&#x91CF;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;json&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF1A;DrillWindowLayout&#x3002;</p>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x540D;&#x79F0;&#x5B8C;&#x5168;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x5F53;&#x524D;&#x63D2;&#x4EF6;&#x4E2D;&#x4E0D;&#x91CD;&#x540D;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4F46;&#x8981;&#x6CE8;&#x610F;&#xFF0C;/*~struct~DrillWindowLayout: &#x8FD9;&#x4E00;&#x884C;&#x4E0D;&#x80FD;&#x7559;&#x4EFB;&#x4F55;&#x7A7A;&#x683C;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| /*~struct~DrillWindowLayout:                                       |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x5E03;&#x5C40;&#x7C7B;&#x578B;                                                   |
+|                                                                       |
+| * \@type select                                                      |
+|                                                                       |
+| * \@option &#x9ED8;&#x8BA4;&#x76AE;&#x80A4;                                                  |
+|                                                                       |
+| * \@value &#x9ED8;&#x8BA4;&#x76AE;&#x80A4;                                                   |
+|                                                                       |
+| * \@option &#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;                                              |
+|                                                                       |
+| * \@value &#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;                                               |
+|                                                                       |
+| * \@option &#x9690;&#x85CF;&#x5E03;&#x5C40;                                                  |
+|                                                                       |
+| * \@value &#x9690;&#x85CF;&#x5E03;&#x5C40;                                                   |
+|                                                                       |
+| * \@desc &#x7A97;&#x53E3;&#x5E03;&#x5C40;&#x7684;&#x7C7B;&#x578B;&#x3002;                                            |
+|                                                                       |
+| * \@default &#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;                                             |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param ---&#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;---                                     |
+|                                                                       |
+| * \@default                                                          |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x8D44;&#x6E90;-&#x8D34;&#x56FE;                                                  |
+|                                                                       |
+| * \@parent ---&#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;---                                    |
+|                                                                       |
+| * \@desc &#x7A97;&#x53E3;&#x7684;&#x80CC;&#x666F;&#x8D34;&#x56FE;&#x7684;&#x8D44;&#x6E90;&#x3002;                                      |
+|                                                                       |
+| * \@default &#x80CC;&#x666F;&#x8D34;&#x56FE;                                                 |
+|                                                                       |
+| * \@require 1                                                        |
+|                                                                       |
+| * \@dir img/Menu__self/                                            |
+|                                                                       |
+| * \@type file                                                        |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x8D34;&#x56FE;&#x4F4D;&#x7F6E;&#x4FEE;&#x6B63; X                                             |
+|                                                                       |
+| * \@parent ---&#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;---                                    |
+|                                                                       |
+| * \@desc                                                             |
+| &#x4FEE;&#x6B63;&#x56FE;&#x7247;&#x7684;&#x4F4D;&#x7F6E;&#x7528;&#x3002;&#x4EE5;&#x7A97;&#x53E3;&#x7684;&#x70B9;&#x4E3A;&#x57FA;&#x51C6;&#xFF0C;&#x8D1F;&#x6570;&#x5411;&#x53F3;&#xFF0C;&#x6B63;&#x6570;&#x5411;&#x5DE6;&#xFF0C;&#x5355;&#x4F4D;&#x50CF;&#x7D20;&#x3002;    |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| * \@param &#x8D34;&#x56FE;&#x4F4D;&#x7F6E;&#x4FEE;&#x6B63; Y                                             |
+|                                                                       |
+| * \@parent ---&#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;---                                    |
+|                                                                       |
+| * \@desc                                                             |
+| &#x4FEE;&#x6B63;&#x56FE;&#x7247;&#x7684;&#x4F4D;&#x7F6E;&#x7528;&#x3002;&#x4EE5;&#x7A97;&#x53E3;&#x7684;&#x70B9;&#x4E3A;&#x57FA;&#x51C6;&#xFF0C;&#x8D1F;&#x6570;&#x5411;&#x4E0A;&#xFF0C;&#x6B63;&#x6570;&#x5411;&#x4E0B;&#xFF0C;&#x5355;&#x4F4D;&#x50CF;&#x7D20;&#x3002;    |
+|                                                                       |
+| * \@default 0                                                        |
+|                                                                       |
+| *                                                                    |
+|                                                                       |
+| */                                                                   |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;\@type struct\<drillwindowlayout>&#x6765;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x3002;</drillwindowlayout></p>
+<p>&#xFF08;\@default&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x9ED8;&#x8BA4;{}&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x5148;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x91CC;&#x9762;&#x914D;&#x7F6E;&#xFF0C;&#x5207;&#x6362;&#x5230;&#x6587;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x590D;&#x5236;&#x7C98;&#x8D34;&#x5373;&#x53EF;&#xFF09;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@param &#x63CF;&#x8FF0;&#x7A97;&#x53E3;&#x5E03;&#x5C40;                                               |
+|                                                                       |
+| * \@parent ----&#x63CF;&#x8FF0;&#x7A97;&#x53E3;----                                    |
+|                                                                       |
+| * \@type struct\<drillwindowlayout>                                  |
+|                                                                       |
+| * \@desc &#x63A7;&#x5236;&#x7A97;&#x53E3;&#x6846;&#x67B6;&#x4E0E;&#x7A97;&#x53E3;&#x80CC;&#x666F;&#x3002;                                    |
+|                                                                       |
+| * \@default                                                          |
+| {\&quot;&#x5E03;&#x5C40;&#x7C7B;&#x578B;\&quot;:\&quot;&#x5355;&#x5F20;&#x80CC;&#x666F;&#x8D34;&#x56FE;\&quot;,\&quot;---&#x5355;&#x5F20;&#x80CC;&#x666F;                        |
+| &#x8D34;&#x56FE;---\&quot;:\&quot;\&quot;,\&quot;&#x8D44;&#x6E90;-&#x8D34;&#x56FE;\&quot;:\&quot;&#x4FE1;&#x606F;&#x9762;&#x677F;A-&#x63CF;&#x8FF0;&#x7A97;&#x53E3;\&quot;,\&quot;&#x8D34;&#x56FE;&#x4F4D;&#x7F6E;&#x4FEE;&#x6B63;  |
+| X\&quot;:\&quot;0\&quot;,\&quot;&#x8D34;&#x56FE;&#x4F4D;&#x7F6E;&#x4FEE;&#x6B63; Y\&quot;:\&quot;0\&quot;}                                   |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</drillwindowlayout></p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x4E5F;&#x652F;&#x6301;&#x5199;&#x6210;&#x6570;&#x7EC4;&#x5F62;&#x5F0F;&#xFF1A;\@type
+struct\<drillwindowlayout>[]&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9700;&#x8981;JSON.parse()&#x4E24;&#x6B21;&#x3002;&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x88AB;&#x5D4C;&#x5957;&#x5C42;&#x7EA7;&#x592A;&#x591A;&#x7ED9;&#x7ED5;&#x6655;&#x4E86;&#x3002;</drillwindowlayout></p>
+<h3 id="drill&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;">Drill&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;</h3>
+<p>&#x63D2;&#x4EF6;&#x5C0F;&#x5DE5;&#x5177;&#x4E2D;&#xFF0C;&#x4F5C;&#x8005;&#x6211;&#x5199;&#x4E86;&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x6CE8;&#x89E3;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7F16;&#x8F91;&#x5668;&#x5BF9;&#x8BE5;&#x63D2;&#x4EF6;&#x7684;&#x6CE8;&#x91CA;&#x7F16;&#x8F91;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x53BB;&#x770B;&#x770B; &#x63D2;&#x4EF6;&#x5C0F;&#x5DE5;&#x5177; &gt; &#x63D2;&#x4EF6;&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668; &gt; &#x5173;&#x4E8E;&#x63D2;&#x4EF6;&#x6700;&#x5927;&#x503C;&#x7F16;&#x8F91;&#x5668;.docx
+&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@Drill_LE_param \&quot;&#x9636;&#x6BB5;-%d\&quot;                                       |
+|                                                                       |
+| * \@Drill_LE_parentKey \&quot;==&#x9636;&#x6BB5;%d&#x81F3;%d==\&quot;                            |
+|                                                                       |
+| * \@Drill_LE_var \&quot;DrillUp.g_xxxx_length\&quot;                           |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@Drill_LE_param \&quot;&#x56FE;&#x7247;-%d\&quot;                                       |
+|                                                                       |
+| * \@Drill_LE_parentKey \&quot;==&#x56FE;&#x7247;&#x3010;%d-%d&#x3011;==\&quot;                         |
+|                                                                       |
+| * \@Drill_LE_var \&quot;null\&quot;                                            |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@Drill_LE_param \&quot;&#x8D44;&#x6E90;-%d\&quot;                                       |
+|                                                                       |
+| * \@Drill_LE_parentKey \&quot;\&quot;                                          |
+|                                                                       |
+| * \@Drill_LE_var \&quot;null\&quot;                                            |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>+-----------------------------------------------------------------------+
+| *                                                                    |
+|                                                                       |
+| * \@Drill_LE_param \&quot;&#x80CC;&#x666F;&#x97F3;&#x4E50;-%d\&quot;                                   |
+|                                                                       |
+| * \@Drill_LE_parentKey \&quot;\&quot;                                          |
+|                                                                       |
+| * \@Drill_LE_var \&quot;DrillUp.g_xxxx_length\&quot;                           |
+|                                                                       |
+| *                                                                    |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x76F8;&#x5173;drill&#x63D2;&#x4EF6;&#x4E5F;&#x6709;&#x914D;&#x7F6E;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53BB;&#x770B;&#x770B;&#x5E76;&#x53C2;&#x8003;&#x53C2;&#x8003;&#x3002;</p>
+<h2 id="&#x53D8;&#x91CF;&#x83B7;&#x53D6;">&#x53D8;&#x91CF;&#x83B7;&#x53D6;</h2>
+<h3 id="&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;">&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</h3>
+<p>&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x5373;&#x53EF;&#xFF0C;&#x56E0;&#x4E3A;&#x5168;&#x90E8;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x4E3A;&#x4E86;&#x540E;&#x671F;&#x9605;&#x8BFB;&#x4EE3;&#x7801;&#x5408;&#x7406;&#xFF0C;&#x8FD9;&#x91CC;&#x6700;&#x597D;&#x52A0;&#x4E0A;String()&#x3002;</p>
+<hr>
+<p>  DrillUp.g_SMa_layout_src =</p>
+<h2 id="-stringdrillupparameters&#x8D44;&#x6E90;-&#x6574;&#x4F53;&#x5E03;&#x5C40;--">  String(DrillUp.parameters[\&apos;&#x8D44;&#x6E90;-&#x6574;&#x4F53;&#x5E03;&#x5C40;\&apos;] || \&quot;\&quot;);</h2>
+<hr>
+<h3 id="&#x6570;&#x5B57;&#x7C7B;&#x578B;">&#x6570;&#x5B57;&#x7C7B;&#x578B;</h3>
+<p>&#x5728;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;Number()&#x51FD;&#x6570;&#x5F3A;&#x8F6C;&#x5373;&#x53EF;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;parseInt()&#x3002;</p>
+<hr>
+<p>  DrillUp.g_SCA_maxFileNum =</p>
+<h2 id="-numberdrillupparameters&#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;--20">  Number(DrillUp.parameters[\&apos;&#x6700;&#x5927;&#x5B58;&#x6863;&#x6570;&#x91CF;\&apos;] || 20);</h2>
+<hr>
+<h3 id="&#x5E03;&#x5C14;&#x7C7B;&#x578B;">&#x5E03;&#x5C14;&#x7C7B;&#x578B;</h3>
+<p>&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x548C;&#x5B57;&#x7B26;&#x4E32;&quot;true&quot;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x8C61;&#x7136;&#x540E;&#x6BD4;&#x8F83;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x51FA;&#x73B0;if&#x4E0D;&#x8D77;&#x6548;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x89C4;&#x907F;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5728;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x5F3A;&#x884C;&#x4F7F;&#x7528;&#x7B49;&#x53F7;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#xFF0C;&#x4F7F;&#x5176;&#x53D8;&#x6210;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x3002;</p>
+<hr>
+<p>  DrillUp.g_SMa_mapName_enable =
+  String(DrillUp.parameters[\&apos;&#x662F;&#x5426;&#x663E;&#x793A;&#x6240;&#x5728;&#x5730;&#x56FE;&#x540D;\&apos;] || \&quot;true\&quot;) ==</p>
+<h2 id="-true">  \&quot;true\&quot;;</h2>
+<hr>
+<h3 id="&#x6570;&#x7EC4;&#x7C7B;&#x578B;">&#x6570;&#x7EC4;&#x7C7B;&#x578B;</h3>
+<p>&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5224;&#x65AD;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x8D4B;&#x503C;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#xFF09;&#x6216;&#x76F4;&#x63A5;&#x672A;&#x5B9A;&#x4E49;&#xFF08;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x65F6;&#x7684;&#x65B0;&#x53D8;&#x91CF;&#x60C5;&#x51B5;&#xFF09;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| if( DrillUp.parameters[\&quot;&#x5907;&#x7528;&#x89D2;&#x8272;&#x524D;&#x89C6;&#x56FE;&#x5217;&#x8868;\&quot;] != undefined &amp;&amp;      |
+|                                                                       |
+| DrillUp.parameters[\&quot;&#x5907;&#x7528;&#x89D2;&#x8272;&#x524D;&#x89C6;&#x56FE;&#x5217;&#x8868;\&quot;] != \&quot;\&quot; ){               |
+|                                                                       |
+| DrillUp.g_SMa_actorPicBackupTank = JSON.parse(                        |
+| DrillUp.parameters[\&quot;&#x5907;&#x7528;&#x89D2;&#x8272;&#x524D;&#x89C6;&#x56FE;&#x5217;&#x8868;\&quot;] || [] );             |
+|                                                                       |
+| }else{                                                                |
+|                                                                       |
+| DrillUp.g_SMa_actorPicBackupTank = [];                              |
+|                                                                       |
+| }                                                                     |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;">&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;</h3>
+<p>&#x5728;&#x5BF9;&#x7ED3;&#x6784;&#x4F53;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x524D;&#xFF0C;&#x6700;&#x597D;&#x5148;&#x5199;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x51FD;&#x6570;&#x3002;&#xFF08;&#x7531;&#x4E8E;&#x5728;&#x6700;&#x5916;&#x5C42;&#xFF0C;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x5199;&#x524D;&#x9762;&#xFF09;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;DrillUp.drill_SSh_initMenuCursor()&#x53EF;&#x4EE5;&#x7531;&#x540E;&#x9762;&#x83B7;&#x53D6;&#x65F6;&#xFF0C;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x505A;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x5C31;&#x662F;&#xFF0C;&#x51FD;&#x6570;&#x4E2D;&#x4E0D;&#x9700;&#x8981;&#x5199;&#x590D;&#x6742;&#x7684;DrillUp.parameters&#x4E86;&#xFF0C;&#x800C;&#x662F;&#x53EA;&#x8003;&#x8651;dataFrom&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| //==============================                                      |
+|                                                                       |
+| // * &#x53D8;&#x91CF;&#x83B7;&#x53D6; - &#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;                                           |
+|                                                                       |
+| // &#xFF08;~struct~DrillCursor&#xFF09;                                          |
+|                                                                       |
+| //==============================                                      |
+|                                                                       |
+| DrillUp.drill_SSh_initMenuCursor = function( dataFrom ) {             |
+|                                                                       |
+| var data = {};                                                        |
+|                                                                       |
+| data[\&apos;MCu_enabled\&apos;] = String( dataFrom[\&quot;&#x662F;&#x5426;&#x663E;&#x793A;&#x83DC;&#x5355;&#x6307;&#x9488;\&quot;]    |
+| || \&quot;true\&quot;) == \&quot;true\&quot;;                                           |
+|                                                                       |
+| data[\&apos;MCu_lock\&apos;] = String( dataFrom[\&quot;&#x662F;&#x5426;&#x9501;&#x5B9A;&#x83DC;&#x5355;&#x6307;&#x9488;&#x6837;&#x5F0F;\&quot;]   |
+| || \&quot;false\&quot;) == \&quot;true\&quot;;                                          |
+|                                                                       |
+| data[\&apos;MCu_style\&apos;] = Number( dataFrom[\&quot;&#x9501;&#x5B9A;&#x7684;&#x83DC;&#x5355;&#x6307;&#x9488;&#x6837;&#x5F0F;\&quot;]    |
+| || 1);                                                              |
+|                                                                       |
+| data[\&apos;MCB_rectEnabled\&apos;] = String(                                 |
+| dataFrom[\&quot;&#x662F;&#x5426;&#x542F;&#x7528;&#x95EA;&#x70C1;&#x767D;&#x77E9;&#x5F62;\&quot;] || \&quot;true\&quot;) == \&quot;true\&quot;;        |
+|                                                                       |
+| data[\&apos;MCB_enabled\&apos;] = String( dataFrom[\&quot;&#x662F;&#x5426;&#x542F;&#x7528;&#x83DC;&#x5355;&#x8FB9;&#x6846;\&quot;]    |
+| || \&quot;true\&quot;) == \&quot;true\&quot;;                                           |
+|                                                                       |
+| data[\&apos;MCB_lock\&apos;] = String( dataFrom[\&quot;&#x662F;&#x5426;&#x9501;&#x5B9A;&#x83DC;&#x5355;&#x8FB9;&#x6846;&#x6837;&#x5F0F;\&quot;]   |
+| || \&quot;false\&quot;) == \&quot;true\&quot;;                                          |
+|                                                                       |
+| data[\&apos;MCB_style\&apos;] = Number( dataFrom[\&quot;&#x9501;&#x5B9A;&#x7684;&#x83DC;&#x5355;&#x8FB9;&#x6846;&#x6837;&#x5F0F;\&quot;]    |
+| || 1);                                                              |
+|                                                                       |
+| return data;                                                          |
+|                                                                       |
+| }                                                                     |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5224;&#x65AD;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x8D4B;&#x503C;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#xFF09;&#x6216;&#x76F4;&#x63A5;&#x672A;&#x5B9A;&#x4E49;&#xFF08;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x65F6;&#x7684;&#x65B0;&#x53D8;&#x91CF;&#x60C5;&#x51B5;&#xFF09;&#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| if( DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] != \&quot;\&quot; &amp;&amp;           |
+|                                                                       |
+| DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] != undefined ){          |
+|                                                                       |
+| var cursor = JSON.parse( DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] |
+| );                                                                    |
+|                                                                       |
+| DrillUp.g_SSh_buy_cursor = DrillUp.drill_SSh_initMenuCursor( cursor   |
+| );                                                                    |
+|                                                                       |
+| }else{                                                                |
+|                                                                       |
+| DrillUp.g_SSh_buy_cursor = null;                                      |
+|                                                                       |
+| }                                                                     |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;DrillUp.g_SSh_buy_cursor&#x4E3A;null&#x65F6;&#xFF0C;&#x540E;&#x671F;&#x51FD;&#x6570;&#x5904;&#x7406;&#x4F1A;&#x5F88;&#x9EBB;&#x70E6;&#xFF0C;&#x90A3;&#x4E48;&#x5199;&#x4E0B;&#x9762;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x4E00;&#x5B9A;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF1A;</p>
+<p>+-----------------------------------------------------------------------+
+| if( DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] != \&quot;\&quot; &amp;&amp;           |
+|                                                                       |
+| DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] != undefined ){          |
+|                                                                       |
+| var cursor = JSON.parse( DrillUp.parameters[\&apos;&#x8D2D;&#x4E70;&#x7A97;&#x53E3;&#x6307;&#x9488;&#x4E0E;&#x8FB9;&#x6846;\&apos;] |
+| );                                                                    |
+|                                                                       |
+| DrillUp.g_SSh_buy_cursor = DrillUp.drill_SSh_initMenuCursor( cursor   |
+| );                                                                    |
+|                                                                       |
+| }else{                                                                |
+|                                                                       |
+| DrillUp.g_SSh_buy_cursor = DrillUp.drill_SSh_initMenuCursor( {} );    |
+|                                                                       |
+| }                                                                     |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<p>&#x5982;&#x679C;&#x6709; &#x7ED3;&#x6784;&#x4F53;&#x548C;&#x6570;&#x7EC4;&#x7EC4;&#x5408;&#x3001;&#x591A;&#x5C42;&#x5D4C;&#x5957;
+&#x7B49;&#x66F4;&#x590D;&#x6742;&#x60C5;&#x51B5;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x770B;&#x770B;&#xFF1A;Drill_SceneMain&#x63D2;&#x4EF6;&#x4E2D;&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="基本函数查询表.html" class="navigation navigation-prev " aria-label="Previous page: 基本函数查询表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="给脚本开发者的建议.html" class="navigation navigation-next " aria-label="Next page: 给脚本开发者的建议">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"注释参数集合","level":"1.16.5.2","depth":3,"next":{"title":"给脚本开发者的建议","level":"1.16.5.3","depth":3,"path":"22.插件脚本开发/工具箱/给脚本开发者的建议.md","ref":"22.插件脚本开发/工具箱/给脚本开发者的建议.md","articles":[]},"previous":{"title":"基本函数查询表","level":"1.16.5.1","depth":3,"path":"22.插件脚本开发/工具箱/基本函数查询表.md","ref":"22.插件脚本开发/工具箱/基本函数查询表.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","copy-code-button","splitter","page-treeview","pageview-count","auto-scroll-table","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"chapter-fold":{},"livereload":{},"splitter":{},"search":{},"auto-scroll-table":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"阮中楠","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"drill-plugins-API-page","language":"zh-hans","gitbook":"*","description":"drill_up系列插件的API说明书，RPGMV常识讲解，插件demo说明与插件编写教程。"},"file":{"path":"22.插件脚本开发/工具箱/注释参数集合.md","mtime":"2021-08-21T15:18:59.593Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-13T13:11:36.423Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

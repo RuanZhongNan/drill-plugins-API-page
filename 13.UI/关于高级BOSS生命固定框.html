@@ -1,0 +1,5096 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>关于高级BOSS生命固定框 · drill-plugins-API-page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="阮中楠">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="关于高级变量固定框.html" />
+    
+    
+    <link rel="prev" href="关于缓冲时间条与数字.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../_book/0.基本定义（必看）/0.基本定义（必看）.md">
+            
+                <span>
+            
+                    
+                    0.基本定义（必看）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../_book/0.基本定义（必看）/作用域.md">
+            
+                <span>
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../_book/0.基本定义（必看）/兼容性.md">
+            
+                <span>
+            
+                    
+                    兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../_book/0.基本定义（必看）/动画帧.md">
+            
+                <span>
+            
+                    
+                    动画帧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../_book/0.基本定义（必看）/插件出错时解决方案.md">
+            
+                <span>
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../_book/0.基本定义（必看）/显示与透明度.md">
+            
+                <span>
+            
+                    
+                    显示与透明度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../_book/0.基本定义（必看）/混合模式.md">
+            
+                <span>
+            
+                    
+                    混合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../_book/0.基本定义（必看）/游戏运行原理.md">
+            
+                <span>
+            
+                    
+                    游戏运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../_book/0.基本定义（必看）/界面.md">
+            
+                <span>
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../_book/0.基本定义（必看）/贴图.md">
+            
+                <span>
+            
+                    
+                    贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../_book/0.性能测试报告/0.性能测试报告.md">
+            
+                <span>
+            
+                    
+                    0.性能测试报告
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../_book/0.性能测试报告/关于插件性能.md">
+            
+                <span>
+            
+                    
+                    关于插件性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    1.系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../_book/1.系统/关于GIF动画序列核心.md">
+            
+                <span>
+            
+                    
+                    关于GIF动画序列核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../_book/1.系统/关于全局存储.md">
+            
+                <span>
+            
+                    
+                    关于全局存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../_book/1.系统/关于变量数组核心.md">
+            
+                <span>
+            
+                    
+                    关于变量数组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../_book/1.系统/关于弹道.md">
+            
+                <span>
+            
+                    
+                    关于弹道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../_book/1.系统/关于按钮组核心.md">
+            
+                <span>
+            
+                    
+                    关于按钮组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../_book/1.系统/关于输入设备核心.md">
+            
+                <span>
+            
+                    
+                    关于输入设备核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../_book/1.系统/方块粉碎大家族.md">
+            
+                <span>
+            
+                    
+                    方块粉碎大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../_book/1.系统/滤镜效果大家族.md">
+            
+                <span>
+            
+                    
+                    滤镜效果大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    10.互动
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../_book/10.互动/rmmv按键控制说明.md">
+            
+                <span>
+            
+                    
+                    rmmv按键控制说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../_book/10.互动/关于举起花盆能力.md">
+            
+                <span>
+            
+                    
+                    关于举起花盆能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../_book/10.互动/关于侧边阶梯.md">
+            
+                <span>
+            
+                    
+                    关于侧边阶梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../_book/10.互动/关于光滑图块.md">
+            
+                <span>
+            
+                    
+                    关于光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../_book/10.互动/关于原地转向能力.md">
+            
+                <span>
+            
+                    
+                    关于原地转向能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../_book/10.互动/关于炸弹人游戏.md">
+            
+                <span>
+            
+                    
+                    关于炸弹人游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../_book/10.互动/关于物体滑行.md">
+            
+                <span>
+            
+                    
+                    关于物体滑行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../_book/10.互动/关于跳跃能力.md">
+            
+                <span>
+            
+                    
+                    关于跳跃能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../_book/10.互动/关于鼠标辅助操作面板.md">
+            
+                <span>
+            
+                    
+                    关于鼠标辅助操作面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    11.地图UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../_book/11.地图UI/关于地图按钮集.md">
+            
+                <span>
+            
+                    
+                    关于地图按钮集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../_book/11.地图UI/关于时间系统.md">
+            
+                <span>
+            
+                    
+                    关于时间系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../_book/11.地图UI/关于玩家信息固定框（配置表）.md">
+            
+                <span>
+            
+                    
+                    关于玩家信息固定框（配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" >
+            
+                <span>
+            
+                    
+                    12.动画
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../_book/12.动画/关于魔法效果与并行动画.md">
+            
+                <span>
+            
+                    
+                    关于魔法效果与并行动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" >
+            
+                <span>
+            
+                    
+                    13.UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../_book/13.UI/关于参数数字.md">
+            
+                <span>
+            
+                    
+                    关于参数数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../_book/13.UI/关于参数条.md">
+            
+                <span>
+            
+                    
+                    关于参数条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../_book/13.UI/关于文本颜色.md">
+            
+                <span>
+            
+                    
+                    关于文本颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../_book/13.UI/关于缓冲时间条与数字.md">
+            
+                <span>
+            
+                    
+                    关于缓冲时间条与数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../_book/13.UI/关于高级BOSS生命固定框.md">
+            
+                <span>
+            
+                    
+                    关于高级BOSS生命固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../_book/13.UI/关于高级变量固定框.md">
+            
+                <span>
+            
+                    
+                    关于高级变量固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    14.鼠标
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../_book/14.鼠标/关于鼠标悬浮窗口.md">
+            
+                <span>
+            
+                    
+                    关于鼠标悬浮窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../_book/14.鼠标/关于鼠标拖拽图片.md">
+            
+                <span>
+            
+                    
+                    关于鼠标拖拽图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../_book/14.鼠标/解谜设计-华容道.md">
+            
+                <span>
+            
+                    
+                    解谜设计-华容道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../_book/14.鼠标/解谜设计-消除砖块.md">
+            
+                <span>
+            
+                    
+                    解谜设计-消除砖块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../_book/14.鼠标/解谜设计-逻辑图形.md">
+            
+                <span>
+            
+                    
+                    解谜设计-逻辑图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    15.对话框
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../_book/15.对话框/关于窗口字符.md">
+            
+                <span>
+            
+                    
+                    关于窗口字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    17.主菜单
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../_book/17.主菜单/关于指针与边框.md">
+            
+                <span>
+            
+                    
+                    关于指针与边框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../_book/17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.md">
+            
+                <span>
+            
+                    
+                    多层组合背景,粒子,魔法圈,gif,视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="../_book/17.主菜单/窗口与布局.md">
+            
+                <span>
+            
+                    
+                    窗口与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="../_book/17.主菜单/菜单关键字.md">
+            
+                <span>
+            
+                    
+                    菜单关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    18.面板
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../_book/18.面板/关于世界地图.md">
+            
+                <span>
+            
+                    
+                    关于世界地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../_book/18.面板/关于全自定义主菜单界面（含配置表）.md">
+            
+                <span>
+            
+                    
+                    关于全自定义主菜单界面（含配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../_book/18.面板/关于全自定义信息面板.md">
+            
+                <span>
+            
+                    
+                    关于全自定义信息面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="../_book/18.面板/关于全自定义商店界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="../_book/18.面板/关于全自定义存档界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义存档界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="../_book/18.面板/关于全自定义物品和技能界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义物品和技能界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="../_book/18.面板/关于全自定义状态界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义状态界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="../_book/18.面板/关于全自定义画廊.md">
+            
+                <span>
+            
+                    
+                    关于全自定义画廊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.9" data-path="../_book/18.面板/关于全自定义装备界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义装备界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.10" data-path="../_book/18.面板/关于滚轴式长画布.md">
+            
+                <span>
+            
+                    
+                    关于滚轴式长画布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.11" data-path="../_book/18.面板/关于限量商店界面.md">
+            
+                <span>
+            
+                    
+                    关于限量商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" >
+            
+                <span>
+            
+                    
+                    2.战斗
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../_book/2.战斗/关于超长能力数值.md">
+            
+                <span>
+            
+                    
+                    关于超长能力数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" >
+            
+                <span>
+            
+                    
+                    20.标题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.13.1" data-path="../_book/20.标题/关于全自定义标题界面.md">
+            
+                <span>
+            
+                    
+                    关于全自定义标题界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" >
+            
+                <span>
+            
+                    
+                    21.故事管理层与人设
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.14.1" data-path="../_book/21.故事管理层与人设/关于小爱丽丝人设.md">
+            
+                <span>
+            
+                    
+                    关于小爱丽丝人设
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" >
+            
+                <span>
+            
+                    
+                    22.插件脚本开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1" >
+            
+                <span>
+            
+                    
+                    a.初步尝试 - 修改存档上限
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1.1" data-path="../_book/22.插件脚本开发/a.初步尝试 - 修改存档上限/修改存档上限.md">
+            
+                <span>
+            
+                    
+                    修改存档上限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.2" >
+            
+                <span>
+            
+                    
+                    b.小试身手 - 建立插件指令
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.2.1" data-path="../_book/22.插件脚本开发/b.小试身手 - 建立插件指令/建立插件指令.md">
+            
+                <span>
+            
+                    
+                    建立插件指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3" >
+            
+                <span>
+            
+                    
+                    c.快速提升 - 在地图界面中放一个贴图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.3.1" data-path="../_book/22.插件脚本开发/c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.md">
+            
+                <span>
+            
+                    
+                    在地图界面中放一个贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.4" >
+            
+                <span>
+            
+                    
+                    d.进阶控制 - 在任意界面中放一个GIF
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.4.1" data-path="../_book/22.插件脚本开发/d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.md">
+            
+                <span>
+            
+                    
+                    在任意界面中放一个GIF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5" >
+            
+                <span>
+            
+                    
+                    工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.5.1" data-path="../_book/22.插件脚本开发/工具箱/基本函数查询表.md">
+            
+                <span>
+            
+                    
+                    基本函数查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5.2" data-path="../_book/22.插件脚本开发/工具箱/注释参数集合.md">
+            
+                <span>
+            
+                    
+                    注释参数集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.5.3" data-path="../_book/22.插件脚本开发/工具箱/给脚本开发者的建议.md">
+            
+                <span>
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" >
+            
+                <span>
+            
+                    
+                    23.问题解答集合（FAQ）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.16.1" data-path="../_book/23.问题解答集合（FAQ）/Rmmv中的常见问题.md">
+            
+                <span>
+            
+                    
+                    Rmmv中的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.2" data-path="../_book/23.问题解答集合（FAQ）/Rmmv中的罕见问题.md">
+            
+                <span>
+            
+                    
+                    Rmmv中的罕见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.3" data-path="../_book/23.问题解答集合（FAQ）/插件出错时解决方案.md">
+            
+                <span>
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" >
+            
+                <span>
+            
+                    
+                    4.技能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.17.1" data-path="../_book/4.技能/关于技能逻辑关系.md">
+            
+                <span>
+            
+                    
+                    关于技能逻辑关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.2" data-path="../_book/4.技能/攻击者与被攻击者.md">
+            
+                <span>
+            
+                    
+                    攻击者与被攻击者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" >
+            
+                <span>
+            
+                    
+                    5.战斗UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="../_book/5.战斗UI/关于战斗简单生命框.md">
+            
+                <span>
+            
+                    
+                    关于战斗简单生命框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.2" data-path="../_book/5.战斗UI/关于战斗角色窗口.md">
+            
+                <span>
+            
+                    
+                    关于战斗角色窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.3" data-path="../_book/5.战斗UI/关于高级角色肖像.md">
+            
+                <span>
+            
+                    
+                    关于高级角色肖像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" >
+            
+                <span>
+            
+                    
+                    6.地图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.19.1" data-path="../_book/6.地图/关于公共事件与并行.md">
+            
+                <span>
+            
+                    
+                    关于公共事件与并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.2" data-path="../_book/6.地图/关于地图活动镜头.md">
+            
+                <span>
+            
+                    
+                    关于地图活动镜头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.3" data-path="../_book/6.地图/关于自定义照明效果.md">
+            
+                <span>
+            
+                    
+                    关于自定义照明效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" >
+            
+                <span>
+            
+                    
+                    7.行走图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.20.1" data-path="../_book/7.行走图/关于动作效果.md">
+            
+                <span>
+            
+                    
+                    关于动作效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.2" data-path="../_book/7.行走图/关于行走图GIF动画序列.md">
+            
+                <span>
+            
+                    
+                    关于行走图GIF动画序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.3" data-path="../_book/7.行走图/关于行走图与图块.md">
+            
+                <span>
+            
+                    
+                    关于行走图与图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.4" data-path="../_book/7.行走图/关于镜像与镜面.md">
+            
+                <span>
+            
+                    
+                    关于镜像与镜面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" >
+            
+                <span>
+            
+                    
+                    8.物体
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.21.1" data-path="../_book/8.物体/开关大家族.md">
+            
+                <span>
+            
+                    
+                    开关大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.2" data-path="../_book/8.物体/开关解谜与设计.md">
+            
+                <span>
+            
+                    
+                    开关解谜与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.3" data-path="../_book/8.物体/独立开关与事件页.md">
+            
+                <span>
+            
+                    
+                    独立开关与事件页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.4" data-path="../_book/8.物体/解谜设计-光滑图块.md">
+            
+                <span>
+            
+                    
+                    解谜设计-光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.5" data-path="../_book/8.物体/解谜设计-箱子.md">
+            
+                <span>
+            
+                    
+                    解谜设计-箱子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.6" data-path="../_book/8.物体/解谜设计-脉冲开关.md">
+            
+                <span>
+            
+                    
+                    解谜设计-脉冲开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.7" data-path="../_book/8.物体/解谜设计-迷宫.md">
+            
+                <span>
+            
+                    
+                    解谜设计-迷宫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.8" data-path="../_book/8.物体/解谜设计-顺序记忆.md">
+            
+                <span>
+            
+                    
+                    解谜设计-顺序记忆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" >
+            
+                <span>
+            
+                    
+                    9.物体触发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.22.1" data-path="../_book/9.物体触发/关于事件标签核心.md">
+            
+                <span>
+            
+                    
+                    关于事件标签核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22.2" data-path="../_book/9.物体触发/关于物体触发-固定区域.md">
+            
+                <span>
+            
+                    
+                    关于物体触发-固定区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22.3" data-path="../_book/9.物体触发/关于物体触发-激光区域.md">
+            
+                <span>
+            
+                    
+                    关于物体触发-激光区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" >
+            
+                <span>
+            
+                    
+                    Chapter 1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.23.1" data-path="../_book/chapter-1/section-1.md">
+            
+                <span>
+            
+                    
+                    Section 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23.2" data-path="../_book/chapter-1/section-2.md">
+            
+                <span>
+            
+                    
+                    Section 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" >
+            
+                <span>
+            
+                    
+                    介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.24.1" data-path="../_book/介绍/网站介绍.md">
+            
+                <span>
+            
+                    
+                    网站介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.25.1" data-path="../_book/其它/压缩资源方法.md">
+            
+                <span>
+            
+                    
+                    压缩资源方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25.2" data-path="../_book/其它/给脚本开发者的建议.md">
+            
+                <span>
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    0.基本定义（必看）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../0.基本定义（必看）/作用域.html">
+            
+                <a href="../0.基本定义（必看）/作用域.html">
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../0.基本定义（必看）/兼容性.html">
+            
+                <a href="../0.基本定义（必看）/兼容性.html">
+            
+                    
+                    兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../0.基本定义（必看）/动画帧.html">
+            
+                <a href="../0.基本定义（必看）/动画帧.html">
+            
+                    
+                    动画帧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../0.基本定义（必看）/插件出错时解决方案.html">
+            
+                <a href="../0.基本定义（必看）/插件出错时解决方案.html">
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../0.基本定义（必看）/显示与透明度.html">
+            
+                <a href="../0.基本定义（必看）/显示与透明度.html">
+            
+                    
+                    显示与透明度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../0.基本定义（必看）/混合模式.html">
+            
+                <a href="../0.基本定义（必看）/混合模式.html">
+            
+                    
+                    混合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../0.基本定义（必看）/游戏运行原理.html">
+            
+                <a href="../0.基本定义（必看）/游戏运行原理.html">
+            
+                    
+                    游戏运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../0.基本定义（必看）/界面.html">
+            
+                <a href="../0.基本定义（必看）/界面.html">
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../0.基本定义（必看）/贴图.html">
+            
+                <a href="../0.基本定义（必看）/贴图.html">
+            
+                    
+                    贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../0.性能测试报告/0.性能测试报告.html">
+            
+                <a href="../0.性能测试报告/0.性能测试报告.html">
+            
+                    
+                    0.性能测试报告
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../0.性能测试报告/关于插件性能.html">
+            
+                <a href="../0.性能测试报告/关于插件性能.html">
+            
+                    
+                    关于插件性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../1.系统/关于GIF动画序列核心.html">
+            
+                <a href="../1.系统/关于GIF动画序列核心.html">
+            
+                    
+                    关于GIF动画序列核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../1.系统/关于全局存储.html">
+            
+                <a href="../1.系统/关于全局存储.html">
+            
+                    
+                    关于全局存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../1.系统/关于变量数组核心.html">
+            
+                <a href="../1.系统/关于变量数组核心.html">
+            
+                    
+                    关于变量数组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../1.系统/关于弹道.html">
+            
+                <a href="../1.系统/关于弹道.html">
+            
+                    
+                    关于弹道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../1.系统/关于按钮组核心.html">
+            
+                <a href="../1.系统/关于按钮组核心.html">
+            
+                    
+                    关于按钮组核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../1.系统/关于输入设备核心.html">
+            
+                <a href="../1.系统/关于输入设备核心.html">
+            
+                    
+                    关于输入设备核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../1.系统/方块粉碎大家族.html">
+            
+                <a href="../1.系统/方块粉碎大家族.html">
+            
+                    
+                    方块粉碎大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../1.系统/滤镜效果大家族.html">
+            
+                <a href="../1.系统/滤镜效果大家族.html">
+            
+                    
+                    滤镜效果大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../10.互动/rmmv按键控制说明.html">
+            
+                <a href="../10.互动/rmmv按键控制说明.html">
+            
+                    
+                    rmmv按键控制说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../10.互动/关于举起花盆能力.html">
+            
+                <a href="../10.互动/关于举起花盆能力.html">
+            
+                    
+                    关于举起花盆能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../10.互动/关于侧边阶梯.html">
+            
+                <a href="../10.互动/关于侧边阶梯.html">
+            
+                    
+                    关于侧边阶梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../10.互动/关于光滑图块.html">
+            
+                <a href="../10.互动/关于光滑图块.html">
+            
+                    
+                    关于光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../10.互动/关于原地转向能力.html">
+            
+                <a href="../10.互动/关于原地转向能力.html">
+            
+                    
+                    关于原地转向能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../10.互动/关于炸弹人游戏.html">
+            
+                <a href="../10.互动/关于炸弹人游戏.html">
+            
+                    
+                    关于炸弹人游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../10.互动/关于物体滑行.html">
+            
+                <a href="../10.互动/关于物体滑行.html">
+            
+                    
+                    关于物体滑行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../10.互动/关于跳跃能力.html">
+            
+                <a href="../10.互动/关于跳跃能力.html">
+            
+                    
+                    关于跳跃能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../10.互动/关于鼠标辅助操作面板.html">
+            
+                <a href="../10.互动/关于鼠标辅助操作面板.html">
+            
+                    
+                    关于鼠标辅助操作面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../11.地图UI/关于地图按钮集.html">
+            
+                <a href="../11.地图UI/关于地图按钮集.html">
+            
+                    
+                    关于地图按钮集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../11.地图UI/关于时间系统.html">
+            
+                <a href="../11.地图UI/关于时间系统.html">
+            
+                    
+                    关于时间系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../11.地图UI/关于玩家信息固定框（配置表）.html">
+            
+                <a href="../11.地图UI/关于玩家信息固定框（配置表）.html">
+            
+                    
+                    关于玩家信息固定框（配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../12.动画/关于魔法效果与并行动画.html">
+            
+                <a href="../12.动画/关于魔法效果与并行动画.html">
+            
+                    
+                    关于魔法效果与并行动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="关于参数数字.html">
+            
+                <a href="关于参数数字.html">
+            
+                    
+                    关于参数数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="关于参数条.html">
+            
+                <a href="关于参数条.html">
+            
+                    
+                    关于参数条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="关于文本颜色.html">
+            
+                <a href="关于文本颜色.html">
+            
+                    
+                    关于文本颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="关于缓冲时间条与数字.html">
+            
+                <a href="关于缓冲时间条与数字.html">
+            
+                    
+                    关于缓冲时间条与数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5" data-path="关于高级BOSS生命固定框.html">
+            
+                <a href="关于高级BOSS生命固定框.html">
+            
+                    
+                    关于高级BOSS生命固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="关于高级变量固定框.html">
+            
+                <a href="关于高级变量固定框.html">
+            
+                    
+                    关于高级变量固定框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                <a href="../0.基本定义（必看）/0.基本定义（必看）.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../14.鼠标/关于鼠标悬浮窗口.html">
+            
+                <a href="../14.鼠标/关于鼠标悬浮窗口.html">
+            
+                    
+                    关于鼠标悬浮窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../14.鼠标/关于鼠标拖拽图片.html">
+            
+                <a href="../14.鼠标/关于鼠标拖拽图片.html">
+            
+                    
+                    关于鼠标拖拽图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../14.鼠标/解谜设计-华容道.html">
+            
+                <a href="../14.鼠标/解谜设计-华容道.html">
+            
+                    
+                    解谜设计-华容道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../14.鼠标/解谜设计-消除砖块.html">
+            
+                <a href="../14.鼠标/解谜设计-消除砖块.html">
+            
+                    
+                    解谜设计-消除砖块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../14.鼠标/解谜设计-逻辑图形.html">
+            
+                <a href="../14.鼠标/解谜设计-逻辑图形.html">
+            
+                    
+                    解谜设计-逻辑图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../15.对话框/关于窗口字符.html">
+            
+                <a href="../15.对话框/关于窗口字符.html">
+            
+                    
+                    关于窗口字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    17.主菜单
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../17.主菜单/关于指针与边框.html">
+            
+                <a href="../17.主菜单/关于指针与边框.html">
+            
+                    
+                    关于指针与边框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.html">
+            
+                <a href="../17.主菜单/多层组合背景,粒子,魔法圈,gif,视频.html">
+            
+                    
+                    多层组合背景,粒子,魔法圈,gif,视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../17.主菜单/窗口与布局.html">
+            
+                <a href="../17.主菜单/窗口与布局.html">
+            
+                    
+                    窗口与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../17.主菜单/菜单关键字.html">
+            
+                <a href="../17.主菜单/菜单关键字.html">
+            
+                    
+                    菜单关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    18.面板
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../18.面板/关于世界地图.html">
+            
+                <a href="../18.面板/关于世界地图.html">
+            
+                    
+                    关于世界地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../18.面板/关于全自定义主菜单界面（含配置表）.html">
+            
+                <a href="../18.面板/关于全自定义主菜单界面（含配置表）.html">
+            
+                    
+                    关于全自定义主菜单界面（含配置表）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../18.面板/关于全自定义信息面板.html">
+            
+                <a href="../18.面板/关于全自定义信息面板.html">
+            
+                    
+                    关于全自定义信息面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../18.面板/关于全自定义商店界面.html">
+            
+                <a href="../18.面板/关于全自定义商店界面.html">
+            
+                    
+                    关于全自定义商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../18.面板/关于全自定义存档界面.html">
+            
+                <a href="../18.面板/关于全自定义存档界面.html">
+            
+                    
+                    关于全自定义存档界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../18.面板/关于全自定义物品和技能界面.html">
+            
+                <a href="../18.面板/关于全自定义物品和技能界面.html">
+            
+                    
+                    关于全自定义物品和技能界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../18.面板/关于全自定义状态界面.html">
+            
+                <a href="../18.面板/关于全自定义状态界面.html">
+            
+                    
+                    关于全自定义状态界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../18.面板/关于全自定义画廊.html">
+            
+                <a href="../18.面板/关于全自定义画廊.html">
+            
+                    
+                    关于全自定义画廊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../18.面板/关于全自定义装备界面.html">
+            
+                <a href="../18.面板/关于全自定义装备界面.html">
+            
+                    
+                    关于全自定义装备界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../18.面板/关于滚轴式长画布.html">
+            
+                <a href="../18.面板/关于滚轴式长画布.html">
+            
+                    
+                    关于滚轴式长画布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../18.面板/关于限量商店界面.html">
+            
+                <a href="../18.面板/关于限量商店界面.html">
+            
+                    
+                    关于限量商店界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    2.战斗
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../2.战斗/关于超长能力数值.html">
+            
+                <a href="../2.战斗/关于超长能力数值.html">
+            
+                    
+                    关于超长能力数值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    20.标题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../20.标题/关于全自定义标题界面.html">
+            
+                <a href="../20.标题/关于全自定义标题界面.html">
+            
+                    
+                    关于全自定义标题界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    21.故事管理层与人设
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../21.故事管理层与人设/关于小爱丽丝人设.html">
+            
+                <a href="../21.故事管理层与人设/关于小爱丽丝人设.html">
+            
+                    
+                    关于小爱丽丝人设
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    22.插件脚本开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    a.初步尝试 - 修改存档上限
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../22.插件脚本开发/a.初步尝试 - 修改存档上限/修改存档上限.html">
+            
+                <a href="../22.插件脚本开发/a.初步尝试 - 修改存档上限/修改存档上限.html">
+            
+                    
+                    修改存档上限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    b.小试身手 - 建立插件指令
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="../22.插件脚本开发/b.小试身手 - 建立插件指令/建立插件指令.html">
+            
+                <a href="../22.插件脚本开发/b.小试身手 - 建立插件指令/建立插件指令.html">
+            
+                    
+                    建立插件指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" >
+            
+                <span>
+            
+                    
+                    c.快速提升 - 在地图界面中放一个贴图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.3.1" data-path="../22.插件脚本开发/c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.html">
+            
+                <a href="../22.插件脚本开发/c.快速提升 - 在地图界面中放一个贴图/在地图界面中放一个贴图.html">
+            
+                    
+                    在地图界面中放一个贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" >
+            
+                <span>
+            
+                    
+                    d.进阶控制 - 在任意界面中放一个GIF
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.4.1" data-path="../22.插件脚本开发/d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.html">
+            
+                <a href="../22.插件脚本开发/d.进阶控制 - 在任意界面中放一个GIF/在任意界面中放一个GIF.html">
+            
+                    
+                    在任意界面中放一个GIF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" >
+            
+                <span>
+            
+                    
+                    工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.5.1" data-path="../22.插件脚本开发/工具箱/基本函数查询表.html">
+            
+                <a href="../22.插件脚本开发/工具箱/基本函数查询表.html">
+            
+                    
+                    基本函数查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5.2" data-path="../22.插件脚本开发/工具箱/注释参数集合.html">
+            
+                <a href="../22.插件脚本开发/工具箱/注释参数集合.html">
+            
+                    
+                    注释参数集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5.3" data-path="../22.插件脚本开发/工具箱/给脚本开发者的建议.html">
+            
+                <a href="../22.插件脚本开发/工具箱/给脚本开发者的建议.html">
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    23.问题解答集合（FAQ）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../23.问题解答集合（FAQ）/Rmmv中的常见问题.html">
+            
+                <a href="../23.问题解答集合（FAQ）/Rmmv中的常见问题.html">
+            
+                    
+                    Rmmv中的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../23.问题解答集合（FAQ）/Rmmv中的罕见问题.html">
+            
+                <a href="../23.问题解答集合（FAQ）/Rmmv中的罕见问题.html">
+            
+                    
+                    Rmmv中的罕见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../23.问题解答集合（FAQ）/插件出错时解决方案.html">
+            
+                <a href="../23.问题解答集合（FAQ）/插件出错时解决方案.html">
+            
+                    
+                    插件出错时解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    4.技能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../4.技能/关于技能逻辑关系.html">
+            
+                <a href="../4.技能/关于技能逻辑关系.html">
+            
+                    
+                    关于技能逻辑关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../4.技能/攻击者与被攻击者.html">
+            
+                <a href="../4.技能/攻击者与被攻击者.html">
+            
+                    
+                    攻击者与被攻击者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    5.战斗UI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../5.战斗UI/关于战斗简单生命框.html">
+            
+                <a href="../5.战斗UI/关于战斗简单生命框.html">
+            
+                    
+                    关于战斗简单生命框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../5.战斗UI/关于战斗角色窗口.html">
+            
+                <a href="../5.战斗UI/关于战斗角色窗口.html">
+            
+                    
+                    关于战斗角色窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../5.战斗UI/关于高级角色肖像.html">
+            
+                <a href="../5.战斗UI/关于高级角色肖像.html">
+            
+                    
+                    关于高级角色肖像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    6.地图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../6.地图/关于公共事件与并行.html">
+            
+                <a href="../6.地图/关于公共事件与并行.html">
+            
+                    
+                    关于公共事件与并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../6.地图/关于地图活动镜头.html">
+            
+                <a href="../6.地图/关于地图活动镜头.html">
+            
+                    
+                    关于地图活动镜头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../6.地图/关于自定义照明效果.html">
+            
+                <a href="../6.地图/关于自定义照明效果.html">
+            
+                    
+                    关于自定义照明效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    7.行走图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../7.行走图/关于动作效果.html">
+            
+                <a href="../7.行走图/关于动作效果.html">
+            
+                    
+                    关于动作效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../7.行走图/关于行走图GIF动画序列.html">
+            
+                <a href="../7.行走图/关于行走图GIF动画序列.html">
+            
+                    
+                    关于行走图GIF动画序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../7.行走图/关于行走图与图块.html">
+            
+                <a href="../7.行走图/关于行走图与图块.html">
+            
+                    
+                    关于行走图与图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../7.行走图/关于镜像与镜面.html">
+            
+                <a href="../7.行走图/关于镜像与镜面.html">
+            
+                    
+                    关于镜像与镜面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    8.物体
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../8.物体/开关大家族.html">
+            
+                <a href="../8.物体/开关大家族.html">
+            
+                    
+                    开关大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../8.物体/开关解谜与设计.html">
+            
+                <a href="../8.物体/开关解谜与设计.html">
+            
+                    
+                    开关解谜与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../8.物体/独立开关与事件页.html">
+            
+                <a href="../8.物体/独立开关与事件页.html">
+            
+                    
+                    独立开关与事件页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../8.物体/解谜设计-光滑图块.html">
+            
+                <a href="../8.物体/解谜设计-光滑图块.html">
+            
+                    
+                    解谜设计-光滑图块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.5" data-path="../8.物体/解谜设计-箱子.html">
+            
+                <a href="../8.物体/解谜设计-箱子.html">
+            
+                    
+                    解谜设计-箱子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.6" data-path="../8.物体/解谜设计-脉冲开关.html">
+            
+                <a href="../8.物体/解谜设计-脉冲开关.html">
+            
+                    
+                    解谜设计-脉冲开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.7" data-path="../8.物体/解谜设计-迷宫.html">
+            
+                <a href="../8.物体/解谜设计-迷宫.html">
+            
+                    
+                    解谜设计-迷宫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.8" data-path="../8.物体/解谜设计-顺序记忆.html">
+            
+                <a href="../8.物体/解谜设计-顺序记忆.html">
+            
+                    
+                    解谜设计-顺序记忆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    9.物体触发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../9.物体触发/关于事件标签核心.html">
+            
+                <a href="../9.物体触发/关于事件标签核心.html">
+            
+                    
+                    关于事件标签核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../9.物体触发/关于物体触发-固定区域.html">
+            
+                <a href="../9.物体触发/关于物体触发-固定区域.html">
+            
+                    
+                    关于物体触发-固定区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../9.物体触发/关于物体触发-激光区域.html">
+            
+                <a href="../9.物体触发/关于物体触发-激光区域.html">
+            
+                    
+                    关于物体触发-激光区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    Chapter 1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../chapter-1/section-1.html">
+            
+                <a href="../chapter-1/section-1.html">
+            
+                    
+                    Section 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../chapter-1/section-2.html">
+            
+                <a href="../chapter-1/section-2.html">
+            
+                    
+                    Section 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    Node Modules
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../node_modules/argparse/README.md">
+            
+                <span>
+            
+                    
+                    Argparse
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1.1" data-path="../node_modules/argparse/HISTORY.md">
+            
+                <span>
+            
+                    
+                    HISTORY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../node_modules/autolinker/README.md">
+            
+                <span>
+            
+                    
+                    Autolinker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../node_modules/gitbook-plugin-back-to-top-button/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Back To Top Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../node_modules/gitbook-plugin-chapter-fold/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Chapter Fold
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../node_modules/gitbook-plugin-copy-code-button/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Copy Code Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.6" data-path="../node_modules/gitbook-plugin-github/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.7" data-path="../node_modules/gitbook-plugin-page-treeview/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Page Treeview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.8" data-path="../node_modules/gitbook-plugin-pageview-count/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Pageview Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.9" data-path="../node_modules/gitbook-plugin-splitter/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Splitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.10" data-path="../node_modules/he/README.md">
+            
+                <span>
+            
+                    
+                    He
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.11" data-path="../node_modules/marked/README.md">
+            
+                <span>
+            
+                    
+                    Marked
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.11.1" data-path="../node_modules/marked/LICENSE.md">
+            
+                <span>
+            
+                    
+                    LICENSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.12" data-path="../node_modules/node-html-parser/README.md">
+            
+                <span>
+            
+                    
+                    Node Html Parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13" data-path="../node_modules/remarkable/README.md">
+            
+                <span>
+            
+                    
+                    Remarkable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1" >
+            
+                <span>
+            
+                    
+                    Benchmark
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1.1" >
+            
+                <span>
+            
+                    
+                    Fixtures
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.1.1.1" data-path="../node_modules/remarkable/benchmark/fixtures/block-bq-flat.md">
+            
+                <span>
+            
+                    
+                    Block Bq Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.2" data-path="../node_modules/remarkable/benchmark/fixtures/block-bq-nested.md">
+            
+                <span>
+            
+                    
+                    Block Bq Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.3" data-path="../node_modules/remarkable/benchmark/fixtures/block-code.md">
+            
+                <span>
+            
+                    
+                    Block Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.4" data-path="../node_modules/remarkable/benchmark/fixtures/block-fences.md">
+            
+                <span>
+            
+                    
+                    Block Fences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.5" data-path="../node_modules/remarkable/benchmark/fixtures/block-heading.md">
+            
+                <span>
+            
+                    
+                    Block Heading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.6" data-path="../node_modules/remarkable/benchmark/fixtures/block-hr.md">
+            
+                <span>
+            
+                    
+                    Block Hr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.7" data-path="../node_modules/remarkable/benchmark/fixtures/block-html.md">
+            
+                <span>
+            
+                    
+                    Block Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.8" data-path="../node_modules/remarkable/benchmark/fixtures/block-lheading.md">
+            
+                <span>
+            
+                    
+                    Block Lheading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.9" data-path="../node_modules/remarkable/benchmark/fixtures/block-list-flat.md">
+            
+                <span>
+            
+                    
+                    Block List Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.10" data-path="../node_modules/remarkable/benchmark/fixtures/block-list-nested.md">
+            
+                <span>
+            
+                    
+                    Block List Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.11" data-path="../node_modules/remarkable/benchmark/fixtures/block-ref-flat.md">
+            
+                <span>
+            
+                    
+                    Block Ref Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.12" data-path="../node_modules/remarkable/benchmark/fixtures/block-ref-nested.md">
+            
+                <span>
+            
+                    
+                    Block Ref Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.13" data-path="../node_modules/remarkable/benchmark/fixtures/block-tables.md">
+            
+                <span>
+            
+                    
+                    Block Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.14" data-path="../node_modules/remarkable/benchmark/fixtures/inline-autolink.md">
+            
+                <span>
+            
+                    
+                    Inline Autolink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.15" data-path="../node_modules/remarkable/benchmark/fixtures/inline-backticks.md">
+            
+                <span>
+            
+                    
+                    Inline Backticks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.16" data-path="../node_modules/remarkable/benchmark/fixtures/inline-em-flat.md">
+            
+                <span>
+            
+                    
+                    Inline Em Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.17" data-path="../node_modules/remarkable/benchmark/fixtures/inline-em-nested.md">
+            
+                <span>
+            
+                    
+                    Inline Em Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.18" data-path="../node_modules/remarkable/benchmark/fixtures/inline-em-worst.md">
+            
+                <span>
+            
+                    
+                    Inline Em Worst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.19" data-path="../node_modules/remarkable/benchmark/fixtures/inline-entity.md">
+            
+                <span>
+            
+                    
+                    Inline Entity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.20" data-path="../node_modules/remarkable/benchmark/fixtures/inline-escape.md">
+            
+                <span>
+            
+                    
+                    Inline Escape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.21" data-path="../node_modules/remarkable/benchmark/fixtures/inline-html.md">
+            
+                <span>
+            
+                    
+                    Inline Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.22" data-path="../node_modules/remarkable/benchmark/fixtures/inline-links-flat.md">
+            
+                <span>
+            
+                    
+                    Inline Links Flat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.23" data-path="../node_modules/remarkable/benchmark/fixtures/inline-links-nested.md">
+            
+                <span>
+            
+                    
+                    Inline Links Nested
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.24" data-path="../node_modules/remarkable/benchmark/fixtures/inline-newlines.md">
+            
+                <span>
+            
+                    
+                    Inline Newlines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.1.1.25" data-path="../node_modules/remarkable/benchmark/fixtures/rawtabs.md">
+            
+                <span>
+            
+                    
+                    Rawtabs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.2" >
+            
+                <span>
+            
+                    
+                    Demo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.13.2.1" data-path="../node_modules/remarkable/demo/example.md">
+            
+                <span>
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.3" data-path="../node_modules/remarkable/CHANGELOG.md">
+            
+                <span>
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.13.4" data-path="../node_modules/remarkable/CONTRIBUTING.md">
+            
+                <span>
+            
+                    
+                    CONTRIBUTING
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.14" data-path="../node_modules/underscore/README.md">
+            
+                <span>
+            
+                    
+                    Underscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="../介绍/网站介绍.html">
+            
+                <a href="../介绍/网站介绍.html">
+            
+                    
+                    网站介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.2" data-path="../其它/压缩资源方法.html">
+            
+                <a href="../其它/压缩资源方法.html">
+            
+                    
+                    压缩资源方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.3" data-path="../其它/给脚本开发者的建议.html">
+            
+                <a href="../其它/给脚本开发者的建议.html">
+            
+                    
+                    给脚本开发者的建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../关于使用条款与商用说明.html">
+            
+                <a href="../关于使用条款与商用说明.html">
+            
+                    
+                    关于使用条款与商用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../插件效果图速览v2.60.html">
+            
+                <a href="../插件效果图速览v2.60.html">
+            
+                    
+                    插件效果图速览v2.60
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >关于高级BOSS生命固定框</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li> 
+<ul>
+<li><div><a href="#&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;">&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;</a><i></i></div></li>
+<li><div><a href="#&#x76F8;&#x4F3C;&#x6587;&#x6863;">&#x76F8;&#x4F3C;&#x6587;&#x6863;</a><i></i></div></li>
+<li><div><a href="#&#x63D2;&#x4EF6;&#x5173;&#x7CFB;">&#x63D2;&#x4EF6;&#x5173;&#x7CFB;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;">&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</a><i></i></div></li>
+<li><div><a href="#&#x53C2;&#x6570;&#x6761;">&#x53C2;&#x6570;&#x6761;</a><i></i></div></li>
+<li><div><a href="#&#x53C2;&#x6570;&#x6570;&#x5B57;">&#x53C2;&#x6570;&#x6570;&#x5B57;</a><i></i></div></li>
+<li><div><a href="#&#x5176;&#x4ED6;&#x5C5E;&#x6027;">&#x5176;&#x4ED6;&#x5C5E;&#x6027;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#boss&#x8BBE;&#x7F6E;">BOSS&#x8BBE;&#x7F6E;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x7ED1;&#x5B9A;&#x5173;&#x8054;">&#x7ED1;&#x5B9A;&#x5173;&#x8054;</a><i></i></div></li>
+<li><div><a href="#&#x65F6;&#x673A;">&#x65F6;&#x673A;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x8BBE;&#x8BA1;">&#x8BBE;&#x8BA1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x914D;&#x7F6E;&#x6D41;&#x7A0B;">&#x914D;&#x7F6E;&#x6D41;&#x7A0B;</a><i></i></div></li>
+<li><div><a href="#&#x793A;&#x4F8B;&#x98CE;&#x683C;">&#x793A;&#x4F8B;&#x98CE;&#x683C;</a><i></i></div></li>
+<li><div><a href="#&#x53C2;&#x8003;&#x5BF9;&#x8C61;">&#x53C2;&#x8003;&#x5BF9;&#x8C61;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;">&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#1&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76EE;&#x6807;">1.&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76EE;&#x6807;</a><i></i></div></li>
+<li><div><a href="#2&#x7ED3;&#x6784;&#x5206;&#x89E3;&#xFF0C;&#x89C4;&#x5212;&#x533A;&#x57DF;">2.&#x7ED3;&#x6784;&#x5206;&#x89E3;&#xFF0C;&#x89C4;&#x5212;&#x533A;&#x57DF;</a><i></i></div></li>
+<li><div><a href="#3&#x8D77;&#x8349;&#x8D44;&#x6E90;">3.&#x8D77;&#x8349;&#x8D44;&#x6E90;</a><i></i></div></li>
+<li><div><a href="#4&#x914D;&#x7F6E;&#x6837;&#x5F0F;">4.&#x914D;&#x7F6E;&#x6837;&#x5F0F;</a><i></i></div></li>
+<li><div><a href="#5&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;">5.&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</a><i></i></div></li>
+<li><div><a href="#6&#x7EC6;&#x8282;&#x8C03;&#x6574;">6.&#x7EC6;&#x8282;&#x8C03;&#x6574;</a><i></i></div></li>
+<li><div><a href="#7&#x6536;&#x5C3E;&#x90E8;&#x5206;">7.&#x6536;&#x5C3E;&#x90E8;&#x5206;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x5982;&#x4F55;&#x505A;&#x51FA;&#x6700;&#x6734;&#x7D20;&#x7684;&#x53EF;&#x7F29;&#x77ED;&#x751F;&#x547D;&#x6761;">&#x5982;&#x4F55;&#x505A;&#x51FA;&#x6700;&#x6734;&#x7D20;&#x7684;&#x53EF;&#x7F29;&#x77ED;&#x751F;&#x547D;&#x6761;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<h3 id="&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;">&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;</h3>
+<p>&#x63D2;&#x4EF6;&#x57FA;&#x4E8E;&#x6838;&#x5FC3;&#xFF1A;</p>
+<p>&#x25C6;Drill_CoreOfBallistics &#x7CFB;&#x7EDF; - &#x5F39;&#x9053;&#x6838;&#x5FC3;</p>
+<p>&#x25C6;Drill_CoreOfGaugeMeter &#x7CFB;&#x7EDF; - &#x53C2;&#x6570;&#x6761;&#x6838;&#x5FC3;</p>
+<p>&#x25C6;Drill_CoreOfGaugeNumber &#x7CFB;&#x7EDF; - &#x53C2;&#x6570;&#x6570;&#x5B57;&#x6838;&#x5FC3;</p>
+<p>&#x63D2;&#x4EF6;&#x672C;&#x4F53;&#xFF1A;</p>
+<p>&#x25C6;Drill_GaugeForBoss UI -- &#x9AD8;&#x7EA7;BOSS&#x751F;&#x547D;&#x56FA;&#x5B9A;&#x6846;</p>
+<p>&#x8BE5;&#x63D2;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#xFF1A;</p>
+<p>&#x25C6;Drill_EnemyTextColor UI - &#x654C;&#x4EBA;&#x6587;&#x672C;&#x989C;&#x8272;</p>
+<p>&#x25C6;Drill_MiniPlateForState &#x9F20;&#x6807; - &#x72B6;&#x6001;&#x548C;buff&#x8BF4;&#x660E;&#x7A97;&#x53E3;</p>
+<p>&#x25C6;Drill_X_GaugeBossFilter UI - &#x9AD8;&#x7EA7;BOSS&#x6846;&#x7684;&#x6EE4;&#x955C;&#x6548;&#x679C;[&#x6269;&#x5C55;]</p>
+<p>&#x8BE5;&#x63D2;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x9700;&#x8981;&#x82B1;&#x8F83;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x8010;&#x5FC3;&#x5B66;&#x4E60;&#x3002;</p>
+<p><strong>&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5B9E;&#x73B0; &#x6307;&#x5B9A;&#x654C;&#x4EBA;&#x7684;&#x751F;&#x547D;&#x3001;&#x9B54;&#x6CD5;&#x3001;&#x6012;&#x6C14;&#x5C5E;&#x6027;
+&#x53EF;&#x89C6;&#x5316;&#x800C;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x53EA;&#x63D0;&#x4F9B;&#x4FE1;&#x606F;&#x663E;&#x793A;&#xFF0C;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x654C;&#x4EBA;&#x7684;&#x771F;&#x5B9E;&#x5C5E;&#x6027;&#x503C;&#x3002;</strong></p>
+<h3 id="&#x76F8;&#x4F3C;&#x6587;&#x6863;">&#x76F8;&#x4F3C;&#x6587;&#x6863;</h3>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x8BBE;&#x8BA1;&#x65B9;&#x6CD5;&#x76F8;&#x4F3C;&#x7684;&#x63D2;&#x4EF6;&#x6587;&#x6863;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x7406;&#x89E3;&#xFF1A;</p>
+<p>+-----------------------------+----------------------------------------+
+| &#x63D2;&#x4EF6;&#x540D;&#x79F0;                    | &#x6587;&#x6863;&#x540D;&#x79F0;                               |
++=============================+========================================+
+| Drill_EnemySimpleHud        | 5.&#x6218;&#x6597;UI &gt; &#x5173;&#x4E8E;&#x6218;&#x6597;&#x7B80;&#x5355;&#x751F;&#x547D;&#x6846;.docx    |
+|                             |                                        |
+| &#x6218;&#x6597;UI - &#x7B80;&#x5355;&#x751F;&#x547D;&#x6846;         |                                        |
++-----------------------------+----------------------------------------+
+| Drill_GaugeForBoss          | 13.UI &gt; &#x5173;&#x4E8E;&#x9AD8;&#x7EA7;BOSS&#x751F;&#x547D;&#x56FA;&#x5B9A;&#x6846;.docx   |
+|                             |                                        |
+| UI -- &#x9AD8;&#x7EA7;&#x53D8;&#x91CF;&#x56FA;&#x5B9A;&#x6846;        |                                        |
++-----------------------------+----------------------------------------+
+| Drill_GaugeForVariable      | 13.UI &gt; &#x5173;&#x4E8E;&#x9AD8;&#x7EA7;&#x53D8;&#x91CF;&#x56FA;&#x5B9A;&#x6846;.docx       |
+|                             |                                        |
+| UI -- &#x9AD8;&#x7EA7;&#x53D8;&#x91CF;&#x56FA;&#x5B9A;&#x6846;        |                                        |
++-----------------------------+----------------------------------------+
+| Drill_GaugeOfBufferTimeBar  | 13.UI &gt; &#x5173;&#x4E8E;&#x7F13;&#x51B2;&#x65F6;&#x95F4;&#x6761;&#x4E0E;&#x6570;&#x5B57;.docx     |
+|                             |                                        |
+| UI - &#x7F13;&#x51B2;&#x65F6;&#x95F4;&#x6761;             |                                        |
+|                             |                                        |
+| Drill_GaugeOfBufferTimeNum  |                                        |
+|                             |                                        |
+| UI - &#x7F13;&#x51B2;&#x65F6;&#x95F4;&#x6570;&#x5B57;           |                                        |
++-----------------------------+----------------------------------------+</p>
+<h3 id="&#x63D2;&#x4EF6;&#x5173;&#x7CFB;">&#x63D2;&#x4EF6;&#x5173;&#x7CFB;</h3>
+<p>&#x9AD8;&#x7EA7;BOSS&#x751F;&#x547D;&#x56FA;&#x5B9A;&#x6846;&#x7684;&#x5173;&#x7CFB;&#x5982;&#x4E0B;&#x56FE;&#x3002;&#x5B9E;&#x7EBF;&#x8868;&#x793A;&#x5FC5;&#x987B;&#x63D2;&#x4EF6;&#xFF0C;&#x865A;&#x7EBF;&#x8868;&#x793A;&#x53EF;&#x65AD;&#x5F00;&#x7684;&#x6269;&#x5C55;&#x63D2;&#x4EF6;&#x3002;</p>
+<p><img src="MediaFolder/media/image2.emf" alt=""></p>
+<h2 id="&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;">&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;</h2>
+<h3 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h3>
+<p>&#x56FA;&#x5B9A;&#x6846;&#x7684;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x4E3B;&#x8981;&#x8F83;&#x590D;&#x6742;&#x7684;&#x914D;&#x7F6E;&#x4E3A;
+&#x5916;&#x6846;+6&#x4E2A;&#x53C2;&#x6570;&#x6570;&#x5B57;+3&#x4E2A;&#x53C2;&#x6570;&#x6761;&#x3002;&#x53C2;&#x6570;&#x6761;&#x548C;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x8981;&#x53BB;&#x76F8;&#x5E94;&#x7684;&#x6838;&#x5FC3;&#x5148;&#x8BBE;&#x8BA1;&#x597D;&#xFF0C;&#x518D;&#x8D34;&#x5230;&#x6846;&#x6837;&#x5F0F;&#x4E2D;</strong>&#x3002;</p>
+<p><img src="MediaFolder/media/image3.emf" alt=""></p>
+<p>&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;&#x9700;&#x8981;&#x7528;&#x8FC7;BOSS&#x8BBE;&#x7F6E;&#x6765;&#x7ED1;&#x5B9A;&#x654C;&#x4EBA;&#x3002;&#x7ED1;&#x5B9A;&#x654C;&#x4EBA;&#x540E;&#xFF0C;&#x8BE5;&#x654C;&#x4EBA;&#x7684;&#x751F;&#x547D;&#x3001;&#x9B54;&#x6CD5;&#x3001;&#x6012;&#x6C14;&#x53C2;&#x6570;&#x4F1A;&#x63D0;&#x4F9B;&#x7ED9;&#x76F8;&#x5E94;&#x7684;
+&#x53C2;&#x6570;&#x6761;&#x548C;&#x53C2;&#x6570;&#x6570;&#x5B57;&#xFF0C;&#x53C2;&#x6570;&#x6761;&#x548C;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x4F1A;&#x6839;&#x636E;&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x8FDB;&#x884C;&#x81EA;&#x6211;&#x53D8;&#x5316;&#x3002;</p>
+<p>&#x4EE5; &#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;-&#x7C97;&#x98CE;&#x683C; &#x4E3A;&#x4F8B;&#xFF0C;&#x56FE;&#x89E3;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image4.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;1.9736111111111112in&quot;}</p>
+<p>&#x5176;&#x4E2D;&#xFF1A;</p>
+<p>1&#xFF09;&#x5934;&#x50CF;&#x4E0D;&#x5728;&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;&#x4E2D;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x654C;&#x4EBA;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;&#xFF0C;&#x800C;&#x5934;&#x50CF;&#x548C;&#x654C;&#x4EBA;&#x662F;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5934;&#x50CF;&#x7684;&#x914D;&#x7F6E;&#x653E;&#x5728;boss&#x8BBE;&#x7F6E;&#x4E2D;&#xFF0C;&#x53EF;&#x89C1;&#x540E;&#x9762;&#x7AE0;&#x8282;&#x3002;</p>
+<p>2&#xFF09;&#x751F;&#x547D;&#x6BB5;&#x6570;&#x548C;&#x751F;&#x547D;&#x6570;&#x5B57;&#x662F;&#x4E24;&#x5957;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#x751F;&#x547D;&#x6570;&#x5B57;&#x548C;&#x751F;&#x547D;&#x6BB5;&#x6570;&#x7684;&#x503C;&#x4E0D;&#x4E00;&#x6837;&#x3002;&#x800C;&#x4E14;&#x751F;&#x547D;&#x6BB5;&#x6570;&#x6709;&#x524D;&#x7F00;&quot;x&quot;&#x53F7;&#xFF0C;&#x751F;&#x547D;&#x6570;&#x5B57;&#x53EF;&#x4EE5;&#x53D8;&#x5F62;&#x4E3A;
+100/100&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x4E8C;&#x8005;&#x662F;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x3002;&#x9700;&#x8981;&#x5206;&#x522B;&#x914D;&#x7F6E;&#x3002;</p>
+<h3 id="&#x53C2;&#x6570;&#x6761;">&#x53C2;&#x6570;&#x6761;</h3>
+<p><strong>1) &#x53C2;&#x6570;&#x6761;&#x6837;&#x5F0F;</strong></p>
+<p>&#x4E0B;&#x56FE;&#x4E3A;&#x80CC;&#x666F;&#x6846;&#x4E0E;&#x53C2;&#x6570;&#x6761;&#x7684;&#x7EC4;&#x5408;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x6761;&#x5750;&#x6807;&#x65F6;&#xFF0C;&#x6CE8;&#x610F;&#x8981;&#x4F7F;&#x5F97;&#x53C2;&#x6570;&#x6761;&#x4E0E;&#x80CC;&#x666F;&#x6846;&#x5B8C;&#x7F8E;&#x5D4C;&#x5165;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;&#x6761;&#x7684;&#x8BE6;&#x7EC6;&#x6837;&#x5F0F;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x770B;&#x770B;&quot;&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x6761;.docx&quot;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x8D58;&#x8FF0;</strong>&#x3002;</p>
+<p><img src="MediaFolder/media/image5.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.9777777777777777in&quot;}</p>
+<p><img src="MediaFolder/media/image6.png" alt="">{width=&quot;4.916666666666667in&quot;
+height=&quot;0.6896117672790901in&quot;}</p>
+<p><img src="MediaFolder/media/image7.jpeg" alt="F:\\rpg
+mv&#x7BB1;\\&#x53EF;&#x80FD;&#x6709;&#x7528;&#x7684;&#x7D20;&#x6750;\\&#x53C2;&#x6570;&#x6761;&#x63CF;&#x8FF0;3.jpg">{width=&quot;4.9in&quot;
+height=&quot;0.7795603674540682in&quot;}</p>
+<p>&#x56FE;&#x4E2D;&#x6709;&#x80CC;&#x666F;&#x6846;&#x548C;3&#x4E2A;&#x53C2;&#x6570;&#x6761;&#xFF1A;&#xFF08;&#x524D;&#x666F;&#x6846;&#x4E3A;&#x7A7A;&#x56FE;&#x7247;&#xFF0C;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x90FD;&#x672A;&#x663E;&#x793A;&#xFF09;</p>
+<p>&#x751F;&#x547D;&#x6761;&#xFF1A;&#x6BB5;&#x6570;8 + &#x6D41;&#x52A8; + &#x51F9;&#x69FD;&#x6761; + &#x5F39;&#x51FA;&#x6761;</p>
+<p>&#x9B54;&#x6CD5;&#x6761;&#xFF1A;&#x6BB5;&#x6570;1 + &#x6D41;&#x52A8;</p>
+<p>&#x6012;&#x6C14;&#x6761;&#xFF1A;&#x6BB5;&#x6570;1 + &#x6D41;&#x52A8;</p>
+<p><strong>2) &#x52A0;&#x6EE1;&#x52A8;&#x753B;</strong></p>
+<p>&#x52A0;&#x6EE1;&#x52A8;&#x753B;&#x662F;&#x6307;&#xFF0C;&#x6846;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x751F;&#x547D;&#x6761;&#x52A0;&#x6EE1;&#x8FC7;&#x7A0B;&#x7684;&#x52A8;&#x753B;&#x3002;</p>
+<p>&#x8BE5;&#x52A8;&#x753B;&#x5728;&#x8BB8;&#x591A;&#x52A8;&#x4F5C;&#x7C7B;&#x6E38;&#x620F;&#x4E2D;&#x7684;boss&#x90FD;&#x6709;&#x5C55;&#x73B0;&#x3002;</p>
+<p><img src="MediaFolder/media/image8.png" alt="">{width=&quot;3.7495319335083113in&quot;
+height=&quot;0.4791065179352581in&quot;}</p>
+<h3 id="&#x53C2;&#x6570;&#x6570;&#x5B57;">&#x53C2;&#x6570;&#x6570;&#x5B57;</h3>
+<p><strong>1) &#x53C2;&#x6570;&#x6570;&#x5B57;&#x6837;&#x5F0F;</strong></p>
+<p>&#x4E0B;&#x56FE;&#x4E3A;&#x80CC;&#x666F;&#x6846;&#x4E0E;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x7684;&#x7EC4;&#x5408;&#x5173;&#x7CFB;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;&#x6570;&#x5B57;&#x7684;&#x8BE6;&#x7EC6;&#x6837;&#x5F0F;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x770B;&#x770B;&quot;&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x6570;&#x5B57;.docx&quot;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x8D58;&#x8FF0;</strong>&#x3002;</p>
+<p><img src="MediaFolder/media/image9.png" alt="">{width=&quot;4.033683289588802in&quot;
+height=&quot;0.8334055118110236in&quot;}</p>
+<p>&#x56FE;&#x4E2D;&#x6709;&#x80CC;&#x666F;&#x6846;&#xFF0C;1&#x4E2A;&#x53C2;&#x6570;&#x6761;&#xFF0C;2&#x4E2A;&#x53C2;&#x6570;&#x6570;&#x5B57;&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x90FD;&#x672A;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x751F;&#x547D;&#x6570;&#x5B57;&#xFF1A;&#x53F3;&#x5BF9;&#x9F50;</p>
+<p>&#x751F;&#x547D;&#x6BB5;&#x6570;&#xFF1A;&#x53F3;&#x5BF9;&#x9F50; + &quot;x&quot;&#x4E58;&#x53F7;&#x524D;&#x7F00;</p>
+<p><img src="MediaFolder/media/image10.png" alt="">{width=&quot;2.4502121609798775in&quot;
+height=&quot;1.108429571303587in&quot;}</p>
+<p>&#x56FE;&#x4E2D;&#x6709;&#x80CC;&#x666F;&#x6846;&#xFF0C;2&#x4E2A;&#x53C2;&#x6570;&#x6761;&#xFF0C;2&#x4E2A;&#x53C2;&#x6570;&#x6570;&#x5B57;&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x90FD;&#x672A;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x751F;&#x547D;&#x6570;&#x5B57;&#xFF1A;&#x53F3;&#x5BF9;&#x9F50;</p>
+<p>&#x9B54;&#x6CD5;&#x6570;&#x5B57;&#xFF1A;&#x53F3;&#x5BF9;&#x9F50;</p>
+<p><strong>2) &#x751F;&#x547D;&#x6570;&#x5B57;</strong></p>
+<p>&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;&#x6700;&#x5927;&#x751F;&#x547D;&#x503C; = &#x751F;&#x547D;&#x6570;&#x5B57;&#x7684;&#x989D;&#x5B9A;&#x503C;
+&#x3002;&#xFF08;&#x989D;&#x5B9A;&#x503C;&#x662F;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6982;&#x5FF5;&#xFF09;</p>
+<p>&#x8FD9;&#x91CC;&#x56FA;&#x5B9A;&#x6700;&#x5927;&#x751F;&#x547D;&#x503C;&#x4E3A;&#x989D;&#x5B9A;&#x503C;&#x3002;&#x5373;&#x663E;&#x793A;&quot;678/720&quot;&#x7684;&#x683C;&#x5F0F;&#x65F6;&#xFF0C;720&#x662F;&#x6700;&#x5927;&#x751F;&#x547D;&#x503C;&#x3002;</p>
+<p><strong>3&#xFF09;&#x751F;&#x547D;&#x6BB5;&#x6570;</strong></p>
+<p>&#x751F;&#x547D;&#x6BB5;&#x6570; = &#x5F53;&#x524D;&#x751F;&#x547D;&#x503C; / &#x6BB5;&#x4E0A;&#x9650;</p>
+<p>&#x6BB5;&#x6570;&#x7684;&#x6570;&#x503C;&#xFF0C;&#x5C06;&#x4F1A;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x52A0;&quot;x&quot;&#x53F7;&#x524D;&#x7F00;&#xFF0C;&#x6216;&#x8005;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x3002;</p>
+<p><strong>4) &#x63D2;&#x4EF6;&#x6307;&#x4EE4;&#x4E34;&#x65F6;&#x663E;&#x793A;&#x6570;&#x5B57;</strong></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x6307;&#x4EE4;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x5728;&#x6218;&#x6597;&#x8FDB;&#x884C;&#x65F6;&#x51FA;&#x73B0;&#x3002;</p>
+<p><img src="MediaFolder/media/image11.png" alt="">{width=&quot;3.7169892825896764in&quot;
+height=&quot;1.675145450568679in&quot;}</p>
+<p>&#x4F46;&#x662F;&#x524D;&#x63D0;&#x662F;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x914D;&#x7F6E;&#x6837;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x6837;&#x5F0F;&#x4E3A;0&#xFF0C;&#x5219;&#x4EC0;&#x4E48;&#x90FD;&#x770B;&#x4E0D;&#x89C1;&#x3002;</p>
+<p><img src="MediaFolder/media/image12.png" alt="">{width=&quot;3.7086548556430445in&quot;
+height=&quot;2.141852580927384in&quot;}</p>
+<h3 id="&#x5176;&#x4ED6;&#x5C5E;&#x6027;">&#x5176;&#x4ED6;&#x5C5E;&#x6027;</h3>
+<p><strong>1) &#x9707;&#x52A8;&#x6548;&#x679C;</strong></p>
+<p>Boss&#x6536;&#x5230;&#x4F24;&#x5BB3;&#x65F6;&#xFF0C;&#x4F1A;&#x8FDB;&#x884C;&#x4E0A;&#x4E0B;&#x9707;&#x52A8;&#x6216;&#x4F5C;&#x7528;&#x9707;&#x52A8;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x529F;&#x80FD;&#x4E0D;&#x5EFA;&#x8BAE;&#x968F;&#x610F;&#x52A0;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x52A0;&#x4E86;&#x53CD;&#x800C;&#x5F71;&#x54CD;&#x770B;&#x6570;&#x5B57;&#x3002;</p>
+<p><img src="MediaFolder/media/image13.png" alt="">{width=&quot;3.025262467191601in&quot;
+height=&quot;0.7750667104111986in&quot;}</p>
+<p><strong>2) &#x59D3;&#x540D;&#x663E;&#x793A;</strong></p>
+<p>&#x663E;&#x793A;Boss&#x7684;&#x59D3;&#x540D;&#x3002;</p>
+<p>&#x59D3;&#x540D;&#x80FD;&#x591F;&#x652F;&#x6301;&#x4F7F;&#x7528;&#x6E10;&#x53D8;&#x989C;&#x8272;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;Drill_EnemyTextColor&#x654C;&#x4EBA;&#x6587;&#x672C;&#x989C;&#x8272;&#x63D2;&#x4EF6;&#x7684;&#x652F;&#x6301;&#x3002;</p>
+<p><img src="MediaFolder/media/image14.png" alt="">{width=&quot;1.5251323272090989in&quot;
+height=&quot;0.49170931758530184in&quot;}</p>
+<p><strong>3) &#x72B6;&#x6001;&#x663E;&#x793A;</strong></p>
+<p>&#x72B6;&#x6001;&#x4E0E;&#x6570;&#x503C;&#x7684;&#x914D;&#x7F6E;&#x76F8;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5E76;&#x6392;&#xFF0C;&#x5E76; &#x5DE6;&#x5BF9;&#x9F50;&#x3001;&#x53F3;&#x5BF9;&#x9F50;&#x3001;&#x4E0A;&#x5BF9;&#x9F50;&#x3001;&#x4E0B;&#x5BF9;&#x9F50; &#x3002;</p>
+<p>&#x72B6;&#x6001;&#x53EA;&#x80FD;&#x76F4;&#x7EBF;&#x6392;&#x5217;&#xFF0C;&#x4E0D;&#x80FD;&#x6298;&#x884C;&#x3002;</p>
+<p><img src="MediaFolder/media/image15.png" alt="">{width=&quot;2.5517639982502187in&quot;
+height=&quot;0.6145067804024497in&quot;}
+<img src="MediaFolder/media/image16.png" alt="">{width=&quot;2.7809022309711287in&quot;
+height=&quot;1.4685662729658793in&quot;}</p>
+<h2 id="boss&#x8BBE;&#x7F6E;">BOSS&#x8BBE;&#x7F6E;</h2>
+<h3 id="&#x7ED1;&#x5B9A;&#x5173;&#x8054;">&#x7ED1;&#x5B9A;&#x5173;&#x8054;</h3>
+<p>Boss&#x8BBE;&#x7F6E;&#x7684;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p>Boss&#x8BBE;&#x7F6E;&#x7684;&#x914D;&#x7F6E;&#x6BD4;&#x8F83;&#x6742;&#xFF0C;&#x56E0;&#x4E3A;&#x654C;&#x4EBA;&#x6709;&#x5F88;&#x591A;&#x4E2A;&#xFF0C;&#x591A;&#x4E2A;&#x654C;&#x4EBA;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x540C;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x654C;&#x4EBA;&#x6570;&#x636E;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x5C5E;&#x6027;&#x5C31;&#x90FD;&#x88AB;&#x5355;&#x72EC;&#x62FF;&#x51FA;&#x6765;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x4E86;&#x3002;</p>
+<p><img src="MediaFolder/media/image17.emf" alt=""></p>
+<p>Boss&#x8BBE;&#x7F6E; -&gt; &#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F; &#x662F;&#x4E00;&#x5BF9;&#x4E00; &#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F; -&gt; Boss&#x8BBE;&#x7F6E; &#x662F;&#x4E00;&#x5BF9;&#x591A; &#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x591A;&#x4E2A;&#x5C0F;&#x7231;&#x4E3D;&#x4E1D;&#x53EF;&#x4EE5;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#xFF0C;&#x6BCF;&#x4E2A;&#x5C0F;&#x7231;&#x4E3D;&#x4E1D;boss&#x53EA;&#x80FD;&#x7528;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x6307;&#x4EE4;&#xFF0C;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#x53E6;&#x5916;&#x4FEE;&#x6539;&#x5C0F;&#x7231;&#x4E3D;&#x4E1D;boss&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4E0D;&#x8FC7;&#x8BE5;&#x529F;&#x80FD;&#x4E0D;&#x5E38;&#x7528;&#x3002;&#xFF09;</p>
+<p><img src="MediaFolder/media/image18.png" alt="">{width=&quot;5.3639129483814525in&quot;
+height=&quot;1.458150699912511in&quot;}</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;BOSS&#x8BBE;&#x7F6E;&#x4E2D;&#x5206;&#x914D;&#x56FA;&#x5B9A;&#x6846;&#x7684;&#x5E73;&#x79FB;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F7F;&#x5F97;&#x6218;&#x573A;&#x4E0A;&#x51FA;&#x73B0;&#x591A;&#x4E2A;boss&#x751F;&#x547D;&#x6846;&#x65F6;&#xFF0C;&#x4E92;&#x4E0D;&#x906E;&#x6321;&#x3002;</strong></p>
+<p><strong>\
+</strong></p>
+<h3 id="&#x65F6;&#x673A;">&#x65F6;&#x673A;</h3>
+<p><strong>1) &#x4E2D;&#x9014;&#x51FA;&#x73B0;</strong></p>
+<p>BOSS&#x5904;&#x4E8E;\&quot;&#x4E2D;&#x9014;&#x51FA;&#x73B0;\&quot;&#x7684;&#x72B6;&#x6001;&#x65F6;&#xFF0C;BOSS&#x6846;&#x4E5F;&#x4F1A;&#x663E;&#x793A;&#x3002;</p>
+<p><img src="MediaFolder/media/image19.png" alt="">{width=&quot;2.4502121609798775in&quot;
+height=&quot;1.425123578302712in&quot;}<img src="MediaFolder/media/image20.png" alt="">{width=&quot;3.057269247594051in&quot;
+height=&quot;1.8076388888888888in&quot;}</p>
+<p>&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x5728;&#x6218;&#x6597;&#x524D;&#x9690;&#x85CF;&#x6846;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x6307;&#x4EE4;&#x663E;&#x793A;&#xFF0C;&#x8FBE;&#x5230;\&quot;&#x4E2D;&#x9014;&#x51FA;&#x73B0;\&quot;&#x6846;&#x3002;</p>
+<p><img src="MediaFolder/media/image21.png" alt="">{width=&quot;3.5416666666666665in&quot;
+height=&quot;1.2292377515310586in&quot;}</p>
+<p><strong>2) BOSS&#x53D8;&#x8EAB;</strong></p>
+<p>BOSS&#x53D8;&#x8EAB;&#x540E;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6362;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x654C;&#x4EBA;&#x3002;</p>
+<p>&#x539F;&#x6765;&#x7684;BOSS&#x6846;&#x4F1A;&#x6D88;&#x5931;&#xFF0C;&#x5BF9;&#x5E94;&#x65B0;&#x7684;BOSS&#x6846;&#x4F1A;&#x663E;&#x73B0;&#x3002;</p>
+<p><strong>3) &#x8F66;&#x8F6E;&#x6218;</strong></p>
+<p>&#x8F66;&#x8F6E;&#x6218;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x6CE2;&#x6218;&#x6597;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x6B21;&#x5B8C;&#x6574;&#x7684;&#x6218;&#x6597;&#x3002;BOSS&#x6846;&#x4F1A;&#x91CD;&#x590D;&#x5237;&#x65B0;&#x3002;</p>
+<p>&#x7531;&#x4E8E;mog&#x8F66;&#x8F6E;&#x6218;&#x548C;&#x6218;&#x6597;&#x955C;&#x5934;&#x63D2;&#x4EF6;&#x4EA4;&#x4E92;&#x5B58;&#x5728;bug&#xFF0C;BOSS&#x6846;&#x5728;&#x4FEE;&#x6B63;&#x5750;&#x6807;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x754C;&#xFF0C;&#x770B;&#x4E0D;&#x89C1;BOSS&#x6846;&#xFF0C;&#x76EE;&#x524D;&#x6B64;&#x95EE;&#x9898;&#x5F85;&#x89E3;&#x51B3;&#x3002;</p>
+<h2 id="&#x8BBE;&#x8BA1;">&#x8BBE;&#x8BA1;</h2>
+<h3 id="&#x914D;&#x7F6E;&#x6D41;&#x7A0B;">&#x914D;&#x7F6E;&#x6D41;&#x7A0B;</h3>
+<p><strong>&#x7531;&#x4E8E;boss&#x751F;&#x547D;&#x6846;&#x3001;&#x53C2;&#x6570;&#x6761;&#x6838;&#x5FC3;&#x3001;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x6838;&#x5FC3;&#x4E2D;&#x90FD;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5173;&#x8054;&#x914D;&#x7F6E;&#xFF0C;&#x8FD9;&#x91CC;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&quot;&#x98CE;&#x683C;&quot;&#x6765;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x7684;&#x751F;&#x547D;&#x6846;&#x6837;&#x5F0F;</strong>&#x3002;&#x9632;&#x6B62;&#x5404;&#x4E2A;&#x914D;&#x7F6E;&#x7EA0;&#x7F20;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x96BE;&#x4EE5;&#x533A;&#x5206;&#x3002;</p>
+<p><img src="MediaFolder/media/image22.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;4.134027777777778in&quot;}</p>
+<p><strong>&#x5728;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x67E5;&#x770B;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x5185;&#x5BB9;&#x5E73;&#x94FA;&#xFF0C;&#x65B9;&#x4FBF;&#x770B;&#x56FE;&#x7247;&#x540D;&#x79F0;&#x548C;&#x5206;&#x8FA8;&#x7387;</strong>&#x3002;</p>
+<p><img src="MediaFolder/media/image23.png" alt="F:\\rpg mv&#x7BB1;\\Image
+1.png">{width=&quot;5.362435476815398in&quot;
+height=&quot;3.1416666666666666in&quot;}</p>
+<h3 id="&#x793A;&#x4F8B;&#x98CE;&#x683C;">&#x793A;&#x4F8B;&#x98CE;&#x683C;</h3>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x793A;&#x4F8B;&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x98CE;&#x683C;&#xFF1A;</p>
+<p><strong>&#x6807;&#x51C6;&#x98CE;&#x683C;</strong>&#xFF1A;</p>
+<p>&#xFF08;&#x53BB;&#x770B;&#x770B;&#x5728; boss&#x751F;&#x547D;&#x56FA;&#x5B9A;&#x6846;&#x63D2;&#x4EF6;&#x3001;&#x53C2;&#x6570;&#x6761;&#x6838;&#x5FC3;&#x63D2;&#x4EF6;&#x3001;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x63D2;&#x4EF6;
+&#x4E2D;&#x627E;&#x5230;&quot;&#x6807;&#x51C6;&#x98CE;&#x683C;&quot;&#x7684;&#x5B57;&#x773C;&#xFF0C;&#x4ED6;&#x4EEC;&#x76F8;&#x4E92;&#x5173;&#x8054;&#x3002;&#xFF09;</p>
+<p><img src="MediaFolder/media/image24.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;1.025in&quot;}</p>
+<p><strong>&#x7B80;&#x7EA6;&#x98CE;&#x683C;</strong>&#xFF1A;</p>
+<p><img src="MediaFolder/media/image25.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.6375in&quot;}</p>
+<p><strong>&#x50CF;&#x7D20;&#x98CE;&#x683C;</strong>&#xFF1A;</p>
+<p><img src="MediaFolder/media/image26.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;1.0465277777777777in&quot;}</p>
+<p><strong>&#x7C97;&#x98CE;&#x683C;</strong>&#xFF1A;</p>
+<p><img src="MediaFolder/media/image27.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.9652777777777778in&quot;}</p>
+<p><strong>&#x53CD;&#x5411;&#x98CE;&#x683C;</strong>&#xFF1A;</p>
+<p>&#xFF08;&#x7531;&#x4E8E;&#x8BE5;&#x98CE;&#x683C;&#x7684;&#x751F;&#x547D;&#x6761;&#x548C;&#x9B54;&#x6CD5;&#x6761;&#x90FD;&#x65CB;&#x8F6C;&#x4E86;180&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;&#x79F0;&#x53CD;&#x5411;&#x98CE;&#x683C;&#x3002;&#xFF09;</p>
+<p><img src="MediaFolder/media/image28.png" alt="">{width=&quot;5.675492125984252in&quot;
+height=&quot;0.8000688976377953in&quot;}</p>
+<h3 id="&#x53C2;&#x8003;&#x5BF9;&#x8C61;">&#x53C2;&#x8003;&#x5BF9;&#x8C61;</h3>
+<p>boss&#x751F;&#x547D;&#x6846;&#x662F;&#x73A9;&#x5BB6;&#x6BD4;&#x8F83;&#x5728;&#x610F;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x591A;&#x82B1;&#x5FC3;&#x601D;&#x8BBE;&#x8BA1;&#x51FA;&#x597D;&#x770B;&#x7684;&#x751F;&#x547D;&#x6846;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E9B;&#x6E38;&#x620F;&#x7684;&#x751F;&#x547D;&#x6846;&#x5206;&#x89E3;&#x53C2;&#x8003;&#xFF1A;</p>
+<p>&#x300A;&#x9B3C;&#x6CE3;4&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x524D;&#x666F; + &#x52A0;&#x6EE1;&#x52A8;&#x753B; + &#x751F;&#x547D;&#x6761;&#xFF08;1&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x51F9;&#x69FD;&#x6761;&#xFF09;</p>
+<p><img src="MediaFolder/media/image29.png" alt="K:\\rmmv\\\`D\~7\$5_5H4COM18DWZHWLHR.png">{width=&quot;5.4in&quot;
+height=&quot;0.4840277777777778in&quot;}</p>
+<p>&#x300A;&#x9B3C;&#x6CE3;5&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x751F;&#x547D;&#x6761;&#xFF08;1&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x51F9;&#x69FD;&#x6761; + &#x7C92;&#x5B50;&#x6548;&#x679C; + &#x6E38;&#x6807;&#xFF09;</p>
+<p><img src="MediaFolder/media/image30.png" alt="">{width=&quot;4.17536198600175in&quot;
+height=&quot;0.4750415573053368in&quot;}</p>
+<p>&#x300A;&#x730E;&#x5929;&#x4F7F;&#x9B54;&#x5973;&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x52A0;&#x6EE1;&#x52A8;&#x753B; + &#x751F;&#x547D;&#x6761;&#xFF08;4&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x51F9;&#x69FD;&#x6761;&#xFF09;</p>
+<p><img src="MediaFolder/media/image31.png" alt="K:\\rmmv\\DW\~E2Q}GEFDWJ5)IA\@FJCMR.png">{width=&quot;4.5055555555555555in&quot;
+height=&quot;1.3263888888888888in&quot;}</p>
+<p>DNF&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x5934;&#x50CF; + &#x540D;&#x79F0; + &#x751F;&#x547D;&#x6BB5;&#x6570; + &#x751F;&#x547D;&#x6761;&#xFF08;8&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x767D;&#x8272;&#x5757;&#x5F39;&#x51FA;&#x6761;&#xFF09;</p>
+<p><img src="MediaFolder/media/image32.png" alt="">{width=&quot;4.200364173228347in&quot;
+height=&quot;0.4750415573053368in&quot;}</p>
+<p>&#x300A;&#x82CD;&#x7FFC;&#x9ED8;&#x793A;&#x5F55;&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x5934;&#x50CF; + &#x751F;&#x547D;&#x6761;&#xFF08;1&#x6BB5; + &#x6D41;&#x52A8; + &#x51F9;&#x69FD;&#x6761; + &#x7C92;&#x5B50;&#x6548;&#x679C;&#xFF09; + &#x9B54;&#x6CD5;&#x6761;&#xFF08;1&#x6BB5;&#xFF09;</p>
+<p><img src="MediaFolder/media/image33.png" alt="">{width=&quot;2.707995406824147in&quot;
+height=&quot;0.5415988626421697in&quot;}</p>
+<p>&#x300A;&#x8840;&#x7F18;&#x8BC5;&#x5492;&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x540D;&#x79F0; + &#x751F;&#x547D;&#x6570;&#x5B57; + &#x751F;&#x547D;&#x6761;&#xFF08;1&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x6E38;&#x6807;&#xFF09;</p>
+<p><img src="MediaFolder/media/image34.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.5067071303587052in&quot;}</p>
+<p>&#x300A;&#x6B7B;&#x4EA1;&#x7EC6;&#x80DE;&#x300B;&#x7684;boss&#x751F;&#x547D;&#x6846;</p>
+<p>&#x80CC;&#x666F; + &#x751F;&#x547D;&#x6761;&#xFF08;1&#x6BB5; + &#x4E0D;&#x6D41;&#x52A8; + &#x767D;&#x8272;&#x5F39;&#x51FA;&#x6761; + &#x6E38;&#x6807;&#xFF09;</p>
+<p><img src="MediaFolder/media/image35.png" alt="">{width=&quot;4.6670713035870515in&quot;
+height=&quot;0.5667158792650918in&quot;}</p>
+<p>&#xFF08;&#x4E0D;&#x8FC7;&#x8BF4;&#x8D77;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B8C;&#x7F8E;&#x7684;&#x751F;&#x547D;&#x6846;&#xFF0C;&#x65E0;&#x8BBA;&#x600E;&#x4E48;&#x8868;&#x73B0;&#xFF0C;&#x5728;&#x5927;&#x4F5C;&#x6E38;&#x620F;&#x91CC;&#x9762;&#x90FD;&#x662F;&#x9526;&#x4E0A;&#x6DFB;&#x82B1;&#xFF0C;&#x5728;rpg&#x8FD9;&#x79CD;&#x5C0F;&#x6E38;&#x620F;&#x91CC;&#x9762;&#xFF0C;&#x5B9E;&#x5728;&#x5F62;&#x6210;&#x4E0D;&#x4E86;&#x4EAE;&#x70B9;&#x3002;&#xFF09;</p>
+<h2 id="&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;">&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;</h2>
+<p>&#x5728;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;&#x524D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B; <a href="#&#x914D;&#x7F6E;&#x6D41;&#x7A0B;">BOSS&#x6846;&#x7684;&#x914D;&#x7F6E;&#x6D41;&#x7A0B;</a> &#x3002;</p>
+<p>+-----------------------------------------------------------------------+
+| <strong>&#x5173;&#x4E8E;&#x5BA1;&#x7F8E;&#xFF1A;</strong>                                                        |
+|                                                                       |
+| &#x7ECF;&#x8FC7;&#x7FA4;&#x53CB;&#x63D0;&#x9192;&#xFF0C;&#x4F5C;&#x8005;&#x6211;&#x624D;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#x6846;&#x67B6;&#x53EF;&#x80FD;&#x3010;&#x4E0D;&#x597D;&#x770B;&#x3011;&#x3002;          |
+|                                                                       |
+| &#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4F5C;&#x8005;&#x6211;&#x7F16;                                                      |
+| &#x5199;&#x6587;&#x6863;&#x65F6;&#xFF0C;&#x662F;&#x4EE5;&#x4E00;&#x4E2A;&#x5F00;&#x8352;&#x8005;&#x7684;&#x89D2;&#x5EA6;&#x601D;&#x8003;&#x95EE;&#x9898;&#x7684;&#x3002;&#x5F00;&#x8352;&#x8005;&#x5173;&#x6CE8;&#x7684;&#x4FA7;&#x91CD;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x6EE1;  |
+| &#x8DB3;&#x529F;&#x80FD;&#x7684;&#x6846;&#x67B6;&#x548C;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6559;&#x7A0B;&#x8BF4;&#x660E;&#xFF0C;&#x7F8E;&#x611F;&#x662F;&#x6B21;&#x8981;&#x56E0;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x81EA;&#x7136;&#x663E;&#x5F97;&#x96BE;&#x770B;&#x3002;  |
+|                                                                       |
+| &#x4F5C;&#x4E3A;&#x8BFB;                                                                |
+| &#x8005;&#x7684;&#x4F60;&#x4EEC;&#xFF0C;&#x66F4;&#x591A;&#x8981;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x6E38;&#x620F;&#x7684;&#x7EC6;&#x8282;&#x548C;UI&#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5343;&#x4E07;&#x4E0D;&#x8981;&#x628A;&#x6211;&#x7684;&#x62D9;  |
+| &#x52A3;&#x7684;&#x7F8E;&#x672F;&#x5F53;&#x6210;UI&#x7684;&#x80FD;&#x529B;&#x4E0A;&#x9650;&#x3002;&#x5E0C;&#x671B;&#x4F60;&#x4EEC;&#x80FD;&#x5728;&#x6B64;&#x6559;&#x7A0B;&#x57FA;&#x7840;&#x4E0A;&#x8BBE;&#x8BA1;&#x51FA;&#x66F4;&#x6F02;&#x4EAE;&#x7684;UI&#x3002;  |
++=======================================================================+
++-----------------------------------------------------------------------+</p>
+<h3 id="1&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76EE;&#x6807;">1.&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76EE;&#x6807;</h3>
+<p>&#x9996;&#x5148;&#x8981;&#x60F3;&#x660E;&#x767D;&#x81EA;&#x5DF1;&#x60F3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EC0;&#x4E48;&#x6837;&#x7684;boss&#x751F;&#x547D;&#x6846;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;Boss&#x6846;&#x7684;&#x529F;&#x80FD;&#x5E76;&#x4E0D;&#x662F;&#x5806;&#x5F97;&#x8D8A;&#x591A;&#x8D8A;&#x597D;&#xFF0C;&#x91CD;&#x70B9;&#x8FD8;&#x662F;&#x8981;&#x8D34;&#x5408;&#x4F60;&#x6E38;&#x620F;&#x7684;&#x753B;&#x98CE;&#x3002;</p>
+<p>&#x7ECF;&#x8FC7;&#x767E;&#x5EA6;&#x5BFB;&#x627E;&#x7075;&#x611F;&#xFF0C;&#x6839;&#x636E;&#x60F3;&#x6CD5;&#x5EFA;&#x7ACB;&#x4E86;&#x4E00;&#x4E2A;&#x521D;&#x7A3F;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image36.jpeg" alt="F:\\rpg
+mv&#x7BB1;\\&#x672A;&#x6807;&#x9898;-1.jpg">{width=&quot;4.733333333333333in&quot;
+height=&quot;0.873160542432196in&quot;}</p>
+<p>&#x611F;&#x89C9;&#x5355;&#x7EAF;&#x7684;&#x4E00;&#x4E2A;&#x957F;&#x6761;&#x592A;&#x7B80;&#x964B;&#x4E86;&#xFF0C;&#x6539;&#x8FDB;&#x4E00;&#x4E0B;&#x7ED3;&#x6784;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image37.jpeg" alt="F:\\rpg
+mv&#x7BB1;\\&#x672A;&#x6807;&#x9898;-1.jpg">{width=&quot;2.8666666666666667in&quot;
+height=&quot;0.7866305774278215in&quot;}</p>
+<h3 id="2&#x7ED3;&#x6784;&#x5206;&#x89E3;&#xFF0C;&#x89C4;&#x5212;&#x533A;&#x57DF;">2.&#x7ED3;&#x6784;&#x5206;&#x89E3;&#xFF0C;&#x89C4;&#x5212;&#x533A;&#x57DF;</h3>
+<p>&#x4F60;&#x9700;&#x8981;&#x5C06; &#x53C2;&#x6570;&#x6761;&#x3001;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x3001;&#x5916;&#x6846;
+&#x7684;&#x7ED3;&#x6784;&#x5206;&#x79BB;&#x3002;&#x56E0;&#x4E3A;&#x4E09;&#x8005;&#x90FD;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x63D2;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x7ECF;&#x8FC7;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x9700;&#x8981;
+1&#x4E2A;&#x80CC;&#x666F;&#x5916;&#x6846;&#x3001;1&#x4E2A;&#x53C2;&#x6570;&#x6761;&#xFF0C;2&#x4E2A;&#x53C2;&#x6570;&#x6570;&#x5B57;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x662F;&#x59D3;&#x540D;&#x3001;&#x72B6;&#x6001;&#x3001;&#x5934;&#x50CF;&#x89C4;&#x5212;&#x7684;&#x533A;&#x57DF;&#x3002;</p>
+<p><img src="MediaFolder/media/image38.png" alt="F:\\rpg
+mv&#x7BB1;\\&#x53C2;&#x6570;&#x6761;&#x6838;&#x5FC3;\\BOSS&#x6846;&#x8BF4;&#x660E;\\sss.png">{width=&quot;4.808333333333334in&quot;
+height=&quot;1.2333333333333334in&quot;}</p>
+<p>&#x8FD9;&#x91CC;&#x9B54;&#x6CD5;&#x548C;&#x6012;&#x6C14;&#x4E0D;&#x8003;&#x8651;&#x3002;</p>
+<h3 id="3&#x8D77;&#x8349;&#x8D44;&#x6E90;">3.&#x8D77;&#x8349;&#x8D44;&#x6E90;</h3>
+<p><strong>1) &#x751F;&#x547D;&#x6761;&#x8D44;&#x6E90; + &#x6846;&#x67B6;</strong></p>
+<p>&#x7531;&#x4E8E;&#x751F;&#x547D;&#x6761;&#x662F;&#x91CD;&#x70B9;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x5148;&#x4ECE;&#x751F;&#x547D;&#x6761;&#x7740;&#x624B;&#x3002;</p>
+<p>&#x8BBE;&#x8BA1;&#x65F6;&#x60F3;&#x8BA9;&#x6761;&#x663E;&#x5F97;&#x66F4;&#x52A0;&#x7C97;&#x4E00;&#x4E9B;&#xFF0C;&#x6709;&#x6253;&#x51FB;&#x611F;&#x3002;&#x4E8E;&#x662F;&#x5C06;&#x9AD8;&#x5EA6;&#x8BBE;&#x4E3A;30&#x50CF;&#x7D20;&#x3002;&#x518D;&#x62C9;&#x4E2A;&#x6E10;&#x53D8;&#x3002;</p>
+<p><img src="MediaFolder/media/image39.png" alt="">{width=&quot;5.475in&quot;
+height=&quot;0.35396981627296586in&quot;}</p>
+<p>&#x76F4;&#x63A5;&#x8BBE;&#x8BA1;&#x7684;&#x957F;&#x65B9;&#x5F62;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8003;&#x8651;&#x906E;&#x7F69;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x4E5F;&#x4E0D;&#x8003;&#x8651;&#x6D41;&#x52A8;&#x6548;&#x679C;&#x3002;&#x8D44;&#x6E90;&#x957F;&#x5EA6;&#x5C31;&#x662F;&#x5B9E;&#x9645;&#x663E;&#x793A;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x6761;&#x7684;&#x5927;&#x5C0F;&#x786E;&#x5B9A;&#x540E;&#xFF0C;&#x518D;&#x6839;&#x636E;&#x6761;&#x7684;&#x5927;&#x5C0F;&#x8BBE;&#x8BA1;&#x80CC;&#x666F;&#x5916;&#x6846;&#x548C;&#x51F9;&#x69FD;&#x6761;&#x3002;</p>
+<p>&#x51F9;&#x69FD;&#x6761;&#x548C;&#x751F;&#x547D;&#x6761;&#x5927;&#x5C0F;&#x4E00;&#x6837;&#xFF0C;&#x52A0;&#x4E00;&#x70B9;&#x6E10;&#x53D8;&#xFF0C;&#x4F7F;&#x5176;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x51F9;&#x8FDB;&#x53BB;&#x7684;&#x3002;</p>
+<p><img src="MediaFolder/media/image40.png" alt="">{width=&quot;5.425in&quot;
+height=&quot;0.3507370953630796in&quot;}</p>
+<p>&#x6846;&#x5148;&#x8BBE;&#x4E3A;&#x5916;&#x9762;&#x5305;&#x88F9;&#x7684;&#x4E00;&#x5C42;&#x7B80;&#x5355;&#x6846;&#x67B6;&#x3002;</p>
+<p><img src="MediaFolder/media/image41.png" alt="">{width=&quot;5.48669072615923in&quot;
+height=&quot;0.43333333333333335in&quot;}</p>
+<p>&#x6846;&#x67B6;&#x753B;&#x597D;&#x540E;&#xFF0C;&#x6309;&#x7167;&#x539F;&#x6765;&#x7684;&#x5E03;&#x5C40;&#x60F3;&#x6CD5;&#xFF0C;&#x5148;&#x628A;&#x6846;&#x653E;&#x4E0A;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image42.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.8090277777777778in&quot;}</p>
+<p>&#x8FD9;&#x91CC;&#x53D1;&#x73B0;&#x72B6;&#x6001;&#x7684;&#x4F4D;&#x7F6E;&#x53CD;&#x800C;&#x6324;&#x51FA;&#x53BB;&#x4E86;&#x4E00;&#x70B9;&#xFF0C;&#x6709;&#x4E9B;&#x4E0D;&#x597D;&#x770B;&#xFF0C;&#x4E8E;&#x662F;&#x653E;&#x91CC;&#x9762;&#x3002;</p>
+<p><img src="MediaFolder/media/image43.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.8090277777777778in&quot;}</p>
+<p><strong>2) &#x751F;&#x547D;&#x6570;&#x5B57;&#x8D44;&#x6E90;</strong></p>
+<p>&#x751F;&#x547D;&#x6570;&#x5B57;&#x53EF;&#x4EE5;&#x5728;ps&#x4E2D;&#x7528;&#x94C5;&#x7B14;&#x753B;&#x5B57;&#x7B26;&#x50CF;&#x7D20;&#x70B9;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x5B57;&#x4F53;&#xFF0C;&#x7136;&#x540E;&#x5305;&#x88F9;&#x4E00;&#x4E9B;&#x7279;&#x6548;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7AD9;&#x9177;&#x5FEB;&#x4E50;&#x4F53;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#x3002;</p>
+<p><img src="MediaFolder/media/image44.png" alt="">{width=&quot;4.841666666666667in&quot;
+height=&quot;1.282988845144357in&quot;}</p>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x5C42;&#x63CF;&#x8FB9;+&#x767D;&#x8272;&#x6E10;&#x53D8;&#x53E0;&#x52A0;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;</p>
+<p><img src="MediaFolder/media/image45.png" alt="">{width=&quot;4.191666666666666in&quot;
+height=&quot;1.5454122922134734in&quot;}</p>
+<p><img src="MediaFolder/media/image46.png" alt="">{width=&quot;3.691666666666667in&quot;
+height=&quot;2.029449912510936in&quot;}</p>
+<p>&#x7136;&#x540E;&#x6805;&#x683C;&#x5316;&#x6587;&#x5B57;&#xFF0C;&#x8FDB;&#x884C;&#x6392;&#x5E03;&#xFF0C;&#x5206;&#x6210;&#x7B49;&#x8DDD;&#x7684;14&#x4EFD;&#x3002;</p>
+<p><img src="MediaFolder/media/image47.png" alt="">{width=&quot;3.133604549431321in&quot;
+height=&quot;1.450125765529309in&quot;}</p>
+<p><img src="MediaFolder/media/image48.png" alt="">{width=&quot;5.291666666666667in&quot;
+height=&quot;1.0416415135608048in&quot;}</p>
+<p><strong>\
+</strong></p>
+<h3 id="4&#x914D;&#x7F6E;&#x6837;&#x5F0F;">4.&#x914D;&#x7F6E;&#x6837;&#x5F0F;</h3>
+<p><strong>1) &#x751F;&#x547D;&#x6761;&#x914D;&#x7F6E;</strong></p>
+<p>&#x4E0B;&#x9762;&#x628A;&#x6253;&#x5F00; &#x53C2;&#x6570;&#x6761;&#x63D2;&#x4EF6;
+&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6761;&#xFF0C;&#x7531;&#x4E8E;&#x4E0D;&#x8003;&#x8651;&#x906E;&#x7F69;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x6D41;&#x52A8;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x524D;&#x53EA;&#x753B;&#x4E86;&#x7EFF;&#x8272;1&#x6BB5;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x6240;&#x4EE5;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image49.png" alt="">{width=&quot;3.308333333333333in&quot;
+height=&quot;2.0323709536307963in&quot;}</p>
+<p><img src="MediaFolder/media/image50.png" alt="">{width=&quot;3.316666666666667in&quot;
+height=&quot;1.466233595800525in&quot;}</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x6D4B;&#x8BD5;&#x524D;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x628A;&#x90E8;&#x5206;&#x9ED8;&#x8BA4;&#x8D44;&#x6E90;&#x8BBE;&#x4E3A;&#x7A7A;&#xFF0C;&#x5982;&#x679C;&#x9ED8;&#x8BA4;&#x7684;&#x8D44;&#x6E90;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x4F1A;&#x62A5;&#x6587;&#x4EF6;&#x9519;&#x8BEF;&#xFF1A;</p>
+<p><img src="MediaFolder/media/image51.png" alt="">{width=&quot;5.1263156167979in&quot;
+height=&quot;0.934484908136483in&quot;}</p>
+<p><strong>2) &#x5916;&#x6846;&#x914D;&#x7F6E;</strong></p>
+<p>&#x8FD9;&#x91CC;&#x63D0;&#x53CA;&#x4E00;&#x4E0B;&#xFF0C;&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F; &#x548C; BOSS&#x914D;&#x7F6E;
+&#x4E4B;&#x6240;&#x4EE5;&#x5206;&#x5F00;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x524D;&#x8005;&#x662F;&#x6837;&#x5F0F;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x6570;&#x636E;&#x3002;<em>&#x6570;&#x636E;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#x4E34;&#x65F6;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x6837;&#x5F0F;&#x662F;&#x56FA;&#x5B9A;&#x4E4B;&#x540E;&#x4E0D;&#x518D;&#x53D8;&#x5316;&#x7684;&#x3002;</em></p>
+<p>&#x4E0B;&#x9762;&#xFF0C;&#x6253;&#x5F00;&#x9AD8;&#x7EA7;boss&#x751F;&#x547D;&#x6846;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x6709;&#x4E9B;&#x53C2;&#x6570;&#x5B57;&#x592A;&#x591A;&#x4E86;&#xFF0C;&#x663E;&#x793A;&#x4E0D;&#x5168;&#xFF0C;&#x53EF;&#x4EE5;&#x62C9;&#x52A8;&#x4E0B;&#x56FE;&#x7684;&#x7AD6;&#x7EBF;&#xFF0C;&#x663E;&#x793A;&#x5168;&#x3002;</p>
+<p><img src="MediaFolder/media/image52.png" alt="">{width=&quot;2.6666666666666665in&quot;
+height=&quot;1.872209098862642in&quot;}<img src="MediaFolder/media/image53.png" alt="">{width=&quot;2.591666666666667in&quot;
+height=&quot;1.8874726596675415in&quot;}</p>
+<p>[]{#PS&#x5BF9;&#x5750;&#x6807;&#x70B9;
+.anchor}<strong>PS&#x5BF9;&#x5750;&#x6807;&#x70B9;</strong>&#xFF1A;&#x8FD9;&#x91CC;&#x6BD4;&#x8F83;&#x5173;&#x952E;&#x7684;&#x662F;&#x8981;&#x5BF9;&#x9F50;&#x6761;&#x7684;&#x4F4D;&#x7F6E;&#x4E0E;&#x5916;&#x6846;&#x7684;&#x5750;&#x6807;&#xFF0C;&#x7531;&#x4E8E;&#x53C2;&#x6570;&#x6761;&#x7684;&#x4E2D;&#x5FC3;&#x951A;&#x70B9;&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x5BF9;&#x9F50;&#x5916;&#x6846;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#x4F4D;&#x7F6E;&#x3002;&#xFF08;&#x8FD9;&#x91CC;&#x4E0D;&#x8003;&#x8651;&#x65CB;&#x8F6C;&#x60C5;&#x51B5;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x7559;&#x610F;&#x65CB;&#x8F6C;&#x5F71;&#x54CD;&#xFF09;</p>
+<p><img src="MediaFolder/media/image54.png" alt="">{width=&quot;4.7in&quot;
+height=&quot;2.255501968503937in&quot;}</p>
+<p><img src="MediaFolder/media/image55.png" alt="">{width=&quot;3.4048556430446193in&quot;
+height=&quot;2.091666666666667in&quot;}</p>
+<p>&#x7136;&#x540E;&#x628A;&#x80CC;&#x666F;&#x52A0;&#x4E0A;&#x3002;</p>
+<p><img src="MediaFolder/media/image56.png" alt="">{width=&quot;3.360184820647419in&quot;
+height=&quot;1.5916666666666666in&quot;}</p>
+<p><strong>3) &#x53C2;&#x6570;&#x6570;&#x5B57;&#x914D;&#x7F6E;</strong></p>
+<p>&#x4E0B;&#x9762;&#x8FDB;&#x5165;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x63D2;&#x4EF6;&#x3002;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x76F8;&#x5BF9;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x90A3;&#x4E48;&#x4E25;&#x683C;&#x7684;&#x543B;&#x5408;&#x8981;&#x6C42;&#xFF0C;&#x4E0D;&#x8FC7;&#x8981;&#x6CE8;&#x610F;&#x53C2;&#x6570;&#x6570;&#x5B57;&#x7684;&#x951A;&#x70B9;&#x5728;&#x4E2D;&#x5FC3;&#xFF0C;&#x4E0D;&#x662F;&#x5DE6;&#x4E0A;&#x89D2;&#x3002;&#x4E0B;&#x56FE;&#x4E3A;&#x751F;&#x547D;&#x6570;&#x5B57;&#x548C;&#x751F;&#x547D;&#x6BB5;&#x6570;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<p><img src="MediaFolder/media/image57.png" alt="">{width=&quot;2.7416666666666667in&quot;
+height=&quot;1.7638681102362204in&quot;}<img src="MediaFolder/media/image58.png" alt="">{width=&quot;2.8535312773403323in&quot;
+height=&quot;1.7590277777777779in&quot;}</p>
+<h3 id="5&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;">5.&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</h3>
+<p>&#x56FA;&#x5B9A;&#x6846;&#x6837;&#x5F0F;&#x8BBE;&#x8BA1;&#x597D;&#x4E86;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;boss&#x8BBE;&#x7F6E;&#x6765;&#x7ED1;&#x5B9A;&#x5230;&#x654C;&#x4EBA;&#x8EAB;&#x4E0A;&#x4E86;&#x3002;&#x751F;&#x547D;&#x6761;&#x7684;&#x6BB5;&#x4E0A;&#x9650;&#x8BBE;&#x7F6E;&#x7B49;&#x4E8E;&#x654C;&#x4EBA;&#x6700;&#x5927;&#x751F;&#x547D;&#x503C;&#xFF0C;&#x786E;&#x4FDD;&#x751F;&#x547D;&#x6761;&#x7684;&#x6BB5;&#xFF0C;&#x662F;&#x6EE1;&#x72B6;&#x6001;&#x663E;&#x793A;&#x7684;&#x3002;</p>
+<p><img src="MediaFolder/media/image59.png" alt="">{width=&quot;3.69198709536308in&quot;
+height=&quot;2.8252449693788275in&quot;}</p>
+<p>&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;boss&#x751F;&#x547D;&#x6761;&#x5728;&#x6218;&#x6597;&#x4E2D;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x77ED;&#x4E86;&#x8BB8;&#x591A;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x6846;&#x7684;&#x5750;&#x6807;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x5C45;&#x4E2D;&#x3002;</p>
+<p><img src="MediaFolder/media/image60.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;2.995138888888889in&quot;}</p>
+<h3 id="6&#x7EC6;&#x8282;&#x8C03;&#x6574;">6.&#x7EC6;&#x8282;&#x8C03;&#x6574;</h3>
+<p>&#x901A;&#x8FC7;&#x5728;boss&#x8BBE;&#x7F6E;&#x4E2D;&#xFF0C;&#x8C03;&#x6574;boss&#x56FA;&#x5B9A;&#x6846;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x987A;&#x5E26;&#x628A;boss&#x5934;&#x50CF;&#x52A0;&#x4E0A;&#x3002;</p>
+<p><img src="MediaFolder/media/image61.png" alt="">{width=&quot;3.2in&quot;
+height=&quot;2.01373031496063in&quot;}</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6846;&#x76F8;&#x5BF9;&#x6765;&#x8BF4;&#x5C45;&#x4E2D;&#x4E86;&#x3002;&#xFF08;boss&#x6846;&#x7684;&#x951A;&#x70B9;&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x4E0D;&#x662F;&#x4E2D;&#x5FC3;&#xFF09;</p>
+<p><img src="MediaFolder/media/image62.png" alt="">{width=&quot;5.768055555555556in&quot;
+height=&quot;0.9652777777777778in&quot;}</p>
+<h3 id="7&#x6536;&#x5C3E;&#x90E8;&#x5206;">7.&#x6536;&#x5C3E;&#x90E8;&#x5206;</h3>
+<p>&#x529F;&#x80FD;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x5927;&#x534A;&#xFF0C;&#x8FD8;&#x5269;&#x4E0B; &#x540D;&#x5B57;&#x3001;&#x9707;&#x52A8;&#x6548;&#x679C;&#x3001;&#x72B6;&#x6001; &#x7B49;&#x6742;&#x9879;&#x3002;&#x8FD9;&#x4E9B;&#x9879;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;
+<a href="#PS&#x5BF9;&#x5750;&#x6807;&#x70B9;">PS&#x5BF9;&#x5750;&#x6807;&#x70B9;</a> &#x7684;&#x65B9;&#x5F0F;&#x5BF9;&#x5E94;&#x3002;</p>
+<p><img src="MediaFolder/media/image63.png" alt="">{width=&quot;3.425in&quot;
+height=&quot;1.6248840769903763in&quot;}</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x53C2;&#x6570;&#x4E2D;&#x76EE;&#x524D;&#x53EA;&#x8BBE;&#x8BA1;&#x4E86;1&#x6BB5;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6269;&#x5145;&#xFF0C;&#x53D8;&#x6210;8&#x6BB5;&#x3002;</p>
+<p><img src="MediaFolder/media/image64.png" alt="">{width=&quot;2.225in&quot;
+height=&quot;1.1513418635170605in&quot;}
+<img src="MediaFolder/media/image65.png" alt="">{width=&quot;2.8835826771653545in&quot;
+height=&quot;1.016755249343832in&quot;}</p>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+<h3 id="&#x5982;&#x4F55;&#x505A;&#x51FA;&#x6700;&#x6734;&#x7D20;&#x7684;&#x53EF;&#x7F29;&#x77ED;&#x751F;&#x547D;&#x6761;">&#x5982;&#x4F55;&#x505A;&#x51FA;&#x6700;&#x6734;&#x7D20;&#x7684;&#x53EF;&#x7F29;&#x77ED;&#x751F;&#x547D;&#x6761;</h3>
+<p>+----------+-----------------------------------------------------------+
+| <strong>&#x95EE;     | &#x5982;&#x4F55;&#x505A;&#x51FA;&#x6700;&#x6734;&#x7D20;&#x7684;&#x53EF;&#x7F29;&#x77ED;&#x751F;&#x547D;&#x6761;                              |
+| &#x9898;&#x540D;&#x79F0;</strong> |                                                           |
++==========+===========================================================+
+| <strong>&#x95EE;     | &#x65E0;                                                        |
+| &#x9898;&#x56FE;&#x793A;</strong> |                                                           |
++----------+-----------------------------------------------------------+
+| <strong>&#x95EE;     | &#x5F88;&#x591A;&#x65F6;&#x5019;&#x7FA4;&#x53CB;&#x53EA;&#x60F3;&#x8981;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x529F;&#x80FD;&#x3002;                        |
+| &#x9898;&#x63CF;&#x8FF0;</strong> |                                                           |
+|          | &#x4F46;&#x7531;&#x4E8E;&#x63D2;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x592A;&#x591A;&#x4E86;&#xFF0C;                                  |
+|          |                                                           |
+|          | &#x7B2C;&#x4E00;&#x53CD;&#x5E94;&#x5C31;&#x662F;&#x5728;&#x8BE5;&#x63D2;&#x4EF6;&#x4E2D;&#x53EF;&#x80FD;&#x5B9E;&#x73B0;&#x4E0D;&#x4E86;&#x3002;                      |
+|          |                                                           |
+|          | &#x800C;&#x8FD9;&#x91CC;&#x5176;&#x5B9E;&#x662F;&#x80FD;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x8FD9;&#x91CC;&#x4E13;&#x95E8;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#x3002;                  |
++----------+-----------------------------------------------------------+
+| <strong>&#x89E3;     | 1.&#x9009;&#x62E9;&#x793A;&#x4F8B;&#x4E2D;&#x7684;&#x7C97;&#x98CE;&#x683C;&#xFF0C;                                    |
+| &#x51B3;&#x65B9;&#x6848;</strong> |                                                           |
+|          | <img src="MediaFolder/media/image66.png" alt="">{width=&quot;3.4in&quot;        |
+|          | height=&quot;1.0502340332458442in&quot;}                            |
+|          |                                                           |
+|          | 2.&#x8BBE;&#x7F6E;&#x7F29;&#x77ED;&#x65B9;&#x5F0F;&#x4E3A;&#x5300;&#x901F;&#x7F29;&#x77ED;&#xFF0C;&#x8BBE;&#x7F6E;&#x5300;&#x901F;&#x7F29;&#x77ED;&#x901F;&#x5EA6;&#x3002;              |
+|          |                                                           |
+|          | <img src="MediaFolder/media/image67.png" alt="">{width=&quot;3.225in&quot;      |
+|          | height=&quot;0.8557425634295713in&quot;}                            |
+|          |                                                           |
+|          | 3.&#x5173;&#x95ED;&#x5F39;&#x51FA;&#x6761;&#x3002;                                            |
+|          |                                                           |
+|          | <img src="Me                                                  |
+|          | diaFolder/media/image68.png" alt="">{width=&quot;3.1333333333333333in&quot; |
+|          | height=&quot;0.8279418197725285in&quot;}                            |
+|          |                                                           |
+|          | &#x5728;&#x793A;&#x4F8B;&#x4E2D;&#x6D4B;&#x8BD5;&#x3002;&#xFF08;&#x6BD4;&#x5982;&#x53BB;15&#x4F4D;&#x6570;&#x6218;&#x6597;&#x6D4B;&#x8BD5;&#xFF09;                    |
+|          |                                                           |
+|          | &#x5373;&#x53EF;&#x5B8C;&#x6210;&#x6700;&#x6734;&#x7D20;&#x7684;&#x751F;&#x547D;&#x6761;&#x7F29;&#x77ED;&#x529F;&#x80FD;&#x3002;                          |
+|          |                                                           |
+|          | &#x53E6;&#x5916;&#x63D0;&#x4E00;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x751F;&#x547D;&#x4E0B;&#x964D;&#x7684;&#x901F;                              |
+|          | &#x5EA6;&#x592A;&#x5FEB;&#x4E86;&#xFF08;&#x6BD4;&#x5982;&#x77AC;&#x95F4;&#x6253;&#x6389;n&#x6BB5;&#x751F;&#x547D;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x5300;&#x901F;&#x7F29;&#x77ED;&#x7684;&#x901F;&#x5EA6;&#x4F1A;&#x6839;&#x636E; |
+|          | &#x6BB5;&#x4E0A;&#x9650;&#x60C5;&#x51B5;&#xFF0C;&#x52A0;&#x901F;&#x6263;&#x9664;&#x3002;                                    |
++----------+-----------------------------------------------------------+</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="关于缓冲时间条与数字.html" class="navigation navigation-prev " aria-label="Previous page: 关于缓冲时间条与数字">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="关于高级变量固定框.html" class="navigation navigation-next " aria-label="Next page: 关于高级变量固定框">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"关于高级BOSS生命固定框","level":"1.9.5","depth":2,"next":{"title":"关于高级变量固定框","level":"1.9.6","depth":2,"path":"13.UI/关于高级变量固定框.md","ref":"13.UI/关于高级变量固定框.md","articles":[]},"previous":{"title":"关于缓冲时间条与数字","level":"1.9.4","depth":2,"path":"13.UI/关于缓冲时间条与数字.md","ref":"13.UI/关于缓冲时间条与数字.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","copy-code-button","splitter","page-treeview","pageview-count","auto-scroll-table","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"chapter-fold":{},"livereload":{},"splitter":{},"search":{},"auto-scroll-table":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"阮中楠","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"drill-plugins-API-page","language":"zh-hans","gitbook":"*","description":"drill_up系列插件的API说明书，RPGMV常识讲解，插件demo说明与插件编写教程。"},"file":{"path":"13.UI/关于高级BOSS生命固定框.md","mtime":"2021-08-21T15:18:21.583Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-13T13:11:36.423Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
