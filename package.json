@@ -7,6 +7,7 @@
     "gitbook-plugin-github": "^3.0.0",
     "gitbook-plugin-page-treeview": "^3.0.6",
     "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
     "gitbook-plugin-splitter": "^0.0.8"
   }
 }
